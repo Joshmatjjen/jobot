@@ -1,0 +1,18 @@
+{
+  "name": "jobot",
+  "version": "1.0.0",
+  "description": "Jobot for webpage",
+  "main": "index.js",
+  "engines": {
+    "node": "12.13.0",
+    "npm": "6.13.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Joshmat Jjen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
