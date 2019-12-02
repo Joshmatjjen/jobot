@@ -22,49 +22,59 @@ const sessionPath = sessionClient.sessionPath(
 
 module.exports = {
   textQuery: async function(text, parameters = {}) {
-    let self = module.exports;
-    const request = {
-      session: sessionPath,
-      queryInput: {
-        text: {
-          // The query to send to the dialogflow agent
-          text: text,
-          // The language used by the client (en-US)
-          languageCode: config.dialogFlowSessionLanguageCode
+    try {
+      let self = module.exports;
+      const request = {
+        session: sessionPath,
+        queryInput: {
+          text: {
+            // The query to send to the dialogflow agent
+            text: text,
+            // The language used by the client (en-US)
+            languageCode: config.dialogFlowSessionLanguageCode
+          }
+        },
+        queryParams: {
+          payload: {
+            data: parameters
+          }
         }
-      },
-      queryParams: {
-        payload: {
-          data: parameters
-        }
-      }
-    };
-    let responses = await sessionClient.detectIntent(request);
-    responses = await self.handleAction(responses);
-    return responses;
+      };
+      let responses = await sessionClient.detectIntent(request);
+      responses = await self.handleAction(responses);
+      return responses;
+    } catch (error) {
+      console.log("ERROR: ", error);
+    }
   },
 
   eventQuery: async function(event, parameters = {}) {
-    let self = module.exports;
-    const request = {
-      session: sessionPath,
-      queryInput: {
-        event: {
-          // The query to send to the dialogflow agent
-          name: event,
-          parameters: structjson.jsonToStructProto(parameters),
-          languageCode: config.dialogFlowSessionLanguageCode
+    try {
+      let self = module.exports;
+      console.log(event);
+      const request = {
+        session: sessionPath,
+        queryInput: {
+          event: {
+            // The query to send to the dialogflow agent
+            name: event,
+            parameters: structjson.jsonToStructProto(parameters),
+            languageCode: config.dialogFlowSessionLanguageCode
+          }
         }
-      }
-      // queryParams: {
-      //   payload: {
-      //     data: structjson.jsonToStructProto(parameters)
-      //   }
-      // }
-    };
-    let responses = await sessionClient.detectIntent(request);
-    responses = await self.handleAction(responses);
-    return responses;
+        // queryParams: {
+        //   payload: {
+        //     data: structjson.jsonToStructProto(parameters)
+        //   }
+        // }
+      };
+      let responses = await sessionClient.detectIntent(request);
+      responses = await self.handleAction(responses);
+      return responses;
+    } catch (error) {
+      console.log("ERROR: ", error);
+    }
+    
   },
 
   handleAction: function(responses) {
