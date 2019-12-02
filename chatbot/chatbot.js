@@ -8,6 +8,7 @@ const credentials = {
   client_email: config.googleClientEmail,
   private_key: config.googlePrivateKey
 };
+// console.log(credentials)
 
 const sessionClient = new dialogflow.SessionsClient({
   projectID,
@@ -45,14 +46,12 @@ module.exports = {
 
   eventQuery: async function(event, parameters = {}) {
     let self = module.exports;
-    console.log("My events", event);
-    console.log("My params", parameters);
     const request = {
       session: sessionPath,
       queryInput: {
         event: {
           // The query to send to the dialogflow agent
-          event: event,
+          name: event,
           parameters: structjson.jsonToStructProto(parameters),
           languageCode: config.dialogFlowSessionLanguageCode
         }
