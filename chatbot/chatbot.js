@@ -10,8 +10,8 @@ const credentials = {
 };
 
 const sessionClient = new dialogflow.SessionsClient({
-  projectID: projectID,
-  credentials: credentials
+  projectID,
+  credentials
 });
 
 const sessionPath = sessionClient.sessionPath(
