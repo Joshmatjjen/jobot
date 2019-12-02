@@ -8,7 +8,7 @@ const credentials = {
   client_email: config.googleClientEmail,
   private_key: config.googlePrivateKey
 };
-// console.log(credentials)
+console.log(process.env.NODE_ENV)
 
 const sessionClient = new dialogflow.SessionsClient({
   projectID,
