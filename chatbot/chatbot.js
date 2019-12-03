@@ -20,7 +20,7 @@ const sessionPath = sessionClient.sessionPath(
   config.dialogFlowSessionID
 );
 
-console.log(sessionClient);
+// console.log(sessionClient);
 
 module.exports = {
   textQuery: async function(text, parameters = {}) {
@@ -48,7 +48,7 @@ module.exports = {
 
   eventQuery: async function(event, parameters = {}) {
     let self = module.exports;
-    console.log(event);
+    // console.log(event);
     const request = {
       session: sessionPath,
       queryInput: {
