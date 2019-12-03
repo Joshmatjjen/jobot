@@ -13,7 +13,9 @@ module.exports = app => {
         req.body.parameters
       );
       res.send(responses[0].queryResult);
-    } catch (error) {}
+    } catch (error) {
+      console.log("ERROR", error);
+    }
   });
 
   app.post("/api/df_event_query", async (req, res) => {
@@ -23,7 +25,9 @@ module.exports = app => {
         req.body.parameters
       );
       res.send(responses[0].queryResult);
-    } catch (error) {}
+    } catch (error) {
+      console.log("ERROR", error);
+    }
   });
 };
 
