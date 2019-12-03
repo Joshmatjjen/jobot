@@ -10,10 +10,7 @@ const credentials = {
 };
 console.log(process.env.NODE_ENV);
 
-const sessionClient = new dialogflow.SessionsClient({
-  projectID,
-  credentials
-});
+const sessionClient = new dialogflow.SessionsClient();
 
 const sessionPath = sessionClient.sessionPath(
   config.googleProjectID,
