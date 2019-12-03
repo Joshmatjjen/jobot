@@ -8,7 +8,7 @@ const credentials = {
   client_email: config.googleClientEmail,
   private_key: config.googlePrivateKey
 };
-console.log(process.env.NODE_ENV)
+console.log(process.env.NODE_ENV);
 
 const sessionClient = new dialogflow.SessionsClient({
   projectID,
@@ -19,6 +19,8 @@ const sessionPath = sessionClient.sessionPath(
   config.googleProjectID,
   config.dialogFlowSessionID
 );
+
+console.log(config.googleClientEmail);
 
 module.exports = {
   textQuery: async function(text, parameters = {}) {
@@ -46,7 +48,7 @@ module.exports = {
 
   eventQuery: async function(event, parameters = {}) {
     let self = module.exports;
-    console.log(event)
+    console.log(event);
     const request = {
       session: sessionPath,
       queryInput: {
