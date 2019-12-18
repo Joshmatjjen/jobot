@@ -6,12 +6,7 @@ const app = express();
 const config = require('./config/keys');
 const mongoose = require('mongoose');
 mongoose
-  .connect(config.mongoURI, {
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-  })
+  .connect(config.mongoURI, {useNewUrlParser: true})
   .then(() => console.log('DB connection successful!😊'))
   .catch(err => console.log(err.message.reason));
 
