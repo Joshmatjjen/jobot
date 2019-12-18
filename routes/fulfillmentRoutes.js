@@ -25,7 +25,13 @@ module.exports = app => {
             course: agent.parameters.courses,
           });
           if (demand.course !== '') {
-            demand.save();
+            demand.save(function(err) {
+              if (err) {
+                console.log('Error: ', err);
+              } else {
+                console.log('success');
+              }
+            });
           }
         }
       });
