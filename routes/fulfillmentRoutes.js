@@ -39,6 +39,7 @@ module.exports = app => {
       } else {
         let coupon = await Coupon.findOne({course: agent.parameters.courses});
         if (coupon !== null) {
+          console.log(coupon);
           responseText = `You want to learn about ${agent.parameters.courses}. Here is a link to the course: ${coupon.link}`;
         }
         agent.add(responseText);
