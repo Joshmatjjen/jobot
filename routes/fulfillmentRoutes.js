@@ -18,14 +18,14 @@ module.exports = app => {
     async function learn(agent) {
       Demand.findOne({course: agent.parameters.courses}, function(err, course) {
         if (course !== null) {
-          course.counter++;
-          course.save();
+          await course.counter++;
+          await course.save();
         } else {
           const demand = new Demand({
             course: agent.parameters.courses,
           });
           if (demand.course !== '') {
-            demand.save(function(err) {
+            await demand.save(function(err) {
               if (err) {
                 console.log('Error: ', err);
               } else {
@@ -35,10 +35,11 @@ module.exports = app => {
           }
         }
       });
-      let responseText = `
-        You want to learn about ${agent.parameters.courses}. 
-        Here is a link to all of my courses: https://jclothing.herokuapp.com
-      `;
+      // let responseText = `
+      //   You want to learn about ${agent.parameters.courses}.
+      //   Here is a link to all of my courses: https://jclothing.herokuapp.com
+      // `;
+      let responseText;
       let badResponseText = ` 😢 Sorry this course is not available, please try other courses `;
       if (agent.parameters.courses === '') {
         agent.add(badResponseText);
