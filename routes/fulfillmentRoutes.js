@@ -14,7 +14,23 @@ module.exports = app => {
       agent.add(`Welcome to my Parrot fulfillment!`);
     }
 
-    function learn(agent) {
+    async function registration(agent) {
+      const registration = new Registration({
+        name: agent.parameters.name,
+        address: agent.parameters.address,
+        phone: agent.parameters.phone,
+        email: agent.parameters.email,
+        registerDate: Date.now(),
+      });
+      try {
+        let reg = await registration.save();
+        console.log(reg);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+
+    async function learn(agent) {
       Demand.findOne({course: agent.parameters.courses}, function(err, course) {
         if (course !== null) {
           course.counter++;
@@ -35,9 +51,14 @@ module.exports = app => {
       let badResponseText = ` 😢 Sorry this course is not available, please try other courses `;
       if (agent.parameters.course === '') {
         agent.add(badResponseText);
-      } else {
-        agent.add(responseText);
       }
+      let coupon = await Coupon.findOne({course: agent.parameters.courses});
+      if (coupon !== null) {
+        responseText = `You want to learn about ${agent.parameters.courses}. 
+                Here is a link to the course: ${coupon.link}`;
+      }
+
+      agent.add(responseText);
     }
 
     function fallback(agent) {
@@ -47,7 +68,7 @@ module.exports = app => {
     let intentMap = new Map();
     intentMap.set('parrot', parrot);
     intentMap.set('learn courses', learn);
-
+    intentMap.set('recommend courses - yes', registration);
     intentMap.set('Default Fallback Intent', fallback);
     agent.handleRequest(intentMap);
   });
