@@ -5,10 +5,25 @@ const app = express();
 
 const config = require('./config/keys');
 const mongoose = require('mongoose');
-mongoose
-  .connect(config.mongoURI, {useNewUrlParser: true})
-  .then(() => console.log('DB connection successful!😊'))
-  .catch(err => console.log(err.message.reason));
+const db = config.mongoURI;
+// mongoose
+//   .connect(config.mongoURI, {useNewUrlParser: true})
+//   .then(() => console.log('DB connection successful!😊'))
+//   .catch(err => console.log(err.message.reason));
+
+const connectDB = async () => {
+  try {
+    await mongoose.connect(db, {
+      useUnifiedTopology: true,
+      useNewUrlParser: true,
+    });
+    console.log('MongoDB is Connected...');
+  } catch (err) {
+    console.error(err.message);
+    process.exit(1);
+  }
+};
+connectDB();
 
 require('./models/Registration');
 require('./models/Demand');
