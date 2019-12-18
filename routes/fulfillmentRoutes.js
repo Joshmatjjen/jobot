@@ -16,25 +16,24 @@ module.exports = app => {
     }
 
     async function learn(agent) {
-      Demand.findOne({course: agent.parameters.courses}, function(err, course) {
-        if (course !== null) {
-          course.counter++;
-          course.save();
-        } else {
-          const demand = new Demand({
-            course: agent.parameters.courses,
-          });
-          if (demand.course !== '') {
-            demand.save(function(err) {
-              if (err) {
-                console.log('Error: ', err);
-              } else {
-                console.log('success');
-              }
+      try {
+        Demand.findOne({course: agent.parameters.courses}, function(err, course) {
+          if (course !== null) {
+            course.counter++;
+            course.save();
+          } else {
+            const demand = new Demand({
+              course: agent.parameters.courses,
             });
+            if (demand.course !== '') {
+              demand.save();
+            }
           }
-        }
-      });
+        });
+      } catch (error) {
+        console.log('Error', error);
+      }
+
       // let responseText = `
       //   You want to learn about ${agent.parameters.courses}.
       //   Here is a link to all of my courses: https://jclothing.herokuapp.com
