@@ -24,7 +24,7 @@ require('./routes/dialogFlowRoutes')(app);
 require('./routes/fulfillmentRoutes')(app);
 
 // mongoose.connect(config.mongoURI, {useNewUrlParser: true});
-
+console.log('You are in ', process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'production') {
   // js and css files
   app.use(express.static('client/build'));
