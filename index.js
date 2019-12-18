@@ -5,7 +5,15 @@ const app = express();
 
 const config = require('./config/keys');
 const mongoose = require('mongoose');
-mongoose.connect(config.mongoURI, {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose
+  .connect(config.mongoURI, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+  })
+  .then(() => console.log('DB connection successful!😊'))
+  .catch(err => console.log(err.message.reason));
 
 require('./models/Registration');
 require('./models/Demand');
