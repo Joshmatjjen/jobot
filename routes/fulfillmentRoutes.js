@@ -2,6 +2,8 @@ const {WebhookClient} = require('dialogflow-fulfillment');
 
 const mongoose = require('mongoose');
 const Demand = mongoose.model('demand');
+const Coupon = mongoose.model('coupon');
+const Registration = mongoose.model('registration');
 
 module.exports = app => {
   app.post('/', async (req, res) => {
