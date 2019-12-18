@@ -31,57 +31,57 @@ module.exports = app => {
       }
     }
 
-    async function learn(agent) {
-      Demand.findOne({course: agent.parameters.courses}, function(err, course) {
-        if (course !== null) {
-          course.counter++;
-          course.save();
-        } else {
-          const demand = new Demand({course: agent.parameters.courses});
-          demand.save();
-        }
-      });
-      let responseText = `You want to learn about ${agent.parameters.courses}. 
-                    Here is a link to all of my courses: https://www.facebook.com/JoshmatJjen`;
-
-      let coupon = await Coupon.findOne({course: agent.parameters.courses});
-      if (coupon !== null) {
-        responseText = `You want to learn about ${agent.parameters.courses}. 
-                Here is a link to the course: ${coupon.link}`;
-      }
-
-      agent.add(responseText);
-    }
-
     // async function learn(agent) {
     //   Demand.findOne({course: agent.parameters.courses}, function(err, course) {
     //     if (course !== null) {
     //       course.counter++;
     //       course.save();
     //     } else {
-    //       const demand = new Demand({
-    //         course: agent.parameters.courses,
-    //       });
-    //       if (demand.course !== '') {
-    //         demand.save();
-    //       }
+    //       const demand = new Demand({course: agent.parameters.courses});
+    //       demand.save();
     //     }
     //   });
-    //   let responseText = `
-    //     You want to learn about ${agent.parameters.courses}.
-    //     Here is a link to all of my courses: https://jclothing.herokuapp.com
-    //   `;
-    //   // let badResponseText = ` 😢 Sorry this course is not available, please try other courses `;
-    //   // if (agent.parameters.courses === '') {
-    //   //   agent.add(badResponseText);
-    //   // } else {
+    //   let responseText = `You want to learn about ${agent.parameters.courses}.
+    //                 Here is a link to all of my courses: https://www.facebook.com/JoshmatJjen`;
+
     //   let coupon = await Coupon.findOne({course: agent.parameters.courses});
     //   if (coupon !== null) {
-    //     responseText = `You want to learn about ${agent.parameters.courses}. Here is a link to the course: ${coupon.link}`;
+    //     responseText = `You want to learn about ${agent.parameters.courses}.
+    //             Here is a link to the course: ${coupon.link}`;
     //   }
+
     //   agent.add(responseText);
-    //   // }
     // }
+
+    async function learn(agent) {
+      Demand.findOne({course: agent.parameters.courses}, function(err, course) {
+        if (course !== null) {
+          course.counter++;
+          course.save();
+        } else {
+          const demand = new Demand({
+            course: agent.parameters.courses,
+          });
+          if (demand.course !== '') {
+            demand.save();
+          }
+        }
+      });
+      let responseText = `
+        You want to learn about ${agent.parameters.courses}.
+        Here is a link to all of my courses: https://jclothing.herokuapp.com
+      `;
+      // let badResponseText = ` 😢 Sorry this course is not available, please try other courses `;
+      // if (agent.parameters.courses === '') {
+      //   agent.add(badResponseText);
+      // } else {
+      let coupon = await Coupon.findOne({course: agent.parameters.courses});
+      if (coupon !== null) {
+        responseText = `You want to learn about ${agent.parameters.courses}. Here is a link to the course: ${coupon.link}`;
+      }
+      agent.add(responseText);
+      // }
+    }
 
     function fallback(agent) {
       agent.add(`I didn't understand`);
