@@ -18,14 +18,14 @@ module.exports = app => {
     async function learn(agent) {
       Demand.findOne({course: agent.parameters.courses}, function(err, course) {
         if (course !== null) {
-          await course.counter++;
-          await course.save();
+          course.counter++;
+          course.save();
         } else {
           const demand = new Demand({
             course: agent.parameters.courses,
           });
           if (demand.course !== '') {
-            await demand.save(function(err) {
+            demand.save(function(err) {
               if (err) {
                 console.log('Error: ', err);
               } else {
