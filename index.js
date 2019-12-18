@@ -27,7 +27,7 @@ require('./routes/fulfillmentRoutes')(app);
 console.log('You are in ', process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'production') {
   // js and css files
-  app.use(express.static('client/build'));
+  app.use(express.static('../client/build'));
 
   // index.html for all page routes
   const path = require('path');
