@@ -17,15 +17,15 @@ module.exports = app => {
     }
 
     async function registration(agent) {
-      const registration = new Registration({
+      const registrations = new Registration({
         name: agent.parameters.name,
         address: agent.parameters.address,
         phone: agent.parameters.phone,
         email: agent.parameters.email,
-        registerDate: Date.now(),
+        dateSent: Date.now(),
       });
       try {
-        let reg = await registration.save();
+        let reg = await registrations.save();
         console.log(reg);
       } catch (err) {
         console.log(err);

@@ -4,6 +4,8 @@ const structjson = require('./structjson');
 const config = require('../config/keys');
 const mongoose = require('mongoose');
 
+const googleAuth = require('google-oauth-jwt');
+
 const projectId = config.googleProjectID;
 const sessionId = config.dialogFlowSessionID;
 const credentials = {
@@ -23,6 +25,21 @@ const Registration = mongoose.model('registration');
 // console.log(sessionClient);
 
 module.exports = {
+  getToken: async function() {
+    return new Promise(resolve => {
+      googleAuth.authenticate(
+        {
+          email: config.googleClientEmail,
+          key: config.googlePrivateKey,
+          scopes: ['https://www.googleapis.com/auth/cloud-platform'],
+        },
+        (err, token) => {
+          resolve(token);
+        }
+      );
+    });
+  },
+
   textQuery: async function(text, userID, parameters = {}) {
     let self = module.exports;
     let sessionPath = sessionClient.sessionPath(projectId, sessionId + userID);
@@ -92,13 +109,13 @@ module.exports = {
       address: fields.address.stringValue,
       phone: fields.phone.stringValue,
       email: fields.email.stringValue,
-      registerDate: Date.now(),
+      dateSent: Date.now(),
     });
     try {
       let reg = await registration.save();
       console.log(reg);
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
     }
   },
 };
