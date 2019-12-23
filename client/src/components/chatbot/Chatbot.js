@@ -167,19 +167,22 @@ class Chatbot extends Component {
     }
   }
 
-  show() {
+  show(event) {
+    event.preventDefault();
+    event.stopPropagation();
     this.setState({showBot: true});
-    // this.componentDidMount();
-    this.df_event_query('Welcome');
+    this.componentDidMount();
   }
 
-  hide() {
+  hide(event) {
+    event.preventDefault();
+    event.stopPropagation();
     this.setState({showBot: false, messages: []});
   }
 
-  _handleQuickReplyPayload(payload, text) {
-    // event.preventDefault();
-    // event.stopPropagation();
+  _handleQuickReplyPayload(event, payload, text) {
+    event.preventDefault();
+    event.stopPropagation();
 
     switch (payload) {
       case 'recommended_yes':
@@ -258,8 +261,8 @@ class Chatbot extends Component {
         <div
           style={{
             minHeight: 400,
-            maxHeight: 500,
-            width: 400,
+            maxHeight: 700,
+            width: 360,
             position: 'absolute',
             bottom: 0,
             right: 0,
