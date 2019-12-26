@@ -9,3 +9,14 @@
   border-radius: 10px;
   padding: 10px;
 }
+
+.msg-data {
+  width: 100%;
+  box-sizing: border-box;
+  /* overflow: auto; */
+}
+
+.black-text {
+  color: #000;
+
+}

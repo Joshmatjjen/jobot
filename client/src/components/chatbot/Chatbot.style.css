@@ -1,5 +1,5 @@
 .chatbox {
-  height: 650px;
+  height: 620px;
   width: 360px;
   z-index: 2;
   position: fixed;
@@ -9,6 +9,11 @@
   background-color: #fff;
   box-shadow: 2px 10px 18px rgb(207, 203, 203);
   cursor: url('../../assets/cursor.png'), auto;
+}
+
+.card-box {
+  border: none;
+  box-shadow: 2px 10px 18px rgb(207, 203, 203);
 }
 
 .chat-nav {
@@ -22,7 +27,7 @@
 
 .nav-image {
   flex-direction: column;
-  padding: 15px;
+  margin: 5px 20px;
   /* cursor: url('../../assets/click.cur'), auto; */
   cursor: pointer;
 }
@@ -31,7 +36,7 @@
   right: 0;
   position: absolute;
   color: #f76421;
-  padding: 20px;
+  padding: 15px;
   cursor: url('../../assets/tap.cur'),
     pointer;
 }
@@ -46,21 +51,27 @@
   overflow: auto;
 }
 
+.msg-box-content {
+  width: 100%;
+  /* height: 100%; */
+  /* overflow: auto; */
+}
+
 .input-msg {
   bottom: 0;
   position: absolute;
   width: 100%;
   display: flex;
   margin-left: 10px;
-  padding-bottom: 5px;
   background-color: #ffffff;
 }
 
 .input-msg input {
   color: #555454;
   width: 100%;
-  height: 50px;
+  height: 40px;
   border: none;
+  margin-bottom: 5px;
   border-radius: 10px;
   box-shadow: 2px 1px 10px rgb(189, 189, 189);
   font-size: 17px;
@@ -69,10 +80,11 @@
 }
 
 .send {
-  margin: 0 10px;
+  margin: 0 15px;
   background-color: #ffffff;
   box-shadow: 2px 1px 10px rgb(189, 189, 189);
-  width: 65px;
+  width: 53px;
+  height: 40px;
   border-radius: 50%;
 }
 
@@ -83,7 +95,7 @@
 }
 
 .send-btn {
-  font-size: 35px;
+  font-size: 28px;
   color: #e48e66;
 }
 
@@ -100,13 +112,13 @@
     z-index: inherit;
   }
 
-  .input-ms {
+  .input-msg {
     position: fixed;
   }
 
   .msg-box {
     height: 100%;
-    padding: 90px 0 55px 0;
+    padding: 85px 0 45px 0;
   }
 
   .chat-icon {

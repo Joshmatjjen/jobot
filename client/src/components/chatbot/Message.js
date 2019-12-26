@@ -11,7 +11,7 @@ const Message = props => (
         <div style={{padding: '5px'}}>
           {props.speaks === 'bot' && <Image width="50" height="50" src={bot} />}
         </div>
-        <div className="col s10">
+        <div className="col msg-data">
           <span className="black-text">{props.text}</span>
         </div>
         <div>

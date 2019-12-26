@@ -208,7 +208,7 @@ class Chatbot extends Component {
     } else if (message.msg && message.msg.payload && message.msg.payload.cards) {
       return (
         <div key={i}>
-          <div className="card-panel grey">
+          <div className="card-box">
             <div style={{overflow: 'hidden'}}>
               <div className="col s2">
                 <img
