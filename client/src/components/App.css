@@ -1,0 +1,21 @@
+div {
+  cursor: url('../assets/cursor.png'), auto;
+}
+
+a {
+  cursor: url('../assets/tap.cur'), auto;
+}
+
+img {
+  cursor: url('../assets/tap.cur'), auto;
+}
+
+nav {
+  cursor: url('../assets/tap.cur'), auto;
+}
+
+input {
+  cursor: url('../assets/text.png'), auto;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}

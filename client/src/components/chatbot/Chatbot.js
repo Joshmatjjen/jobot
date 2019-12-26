@@ -8,12 +8,18 @@ import Message from './Message';
 import Card from './Card';
 import QuickReplies from './QuickReplies';
 
-const cookies = new Cookies();
+// import {Image} from 'react-bootstrap';
+// // import {Nav} from 'react-bootstrap';
 
+import bot from '../../assets/bot.png';
+import bots from '../../assets/bots.png';
+import chat from '../../assets/chat.png';
+import './Chatbot.style.css';
+
+const cookies = new Cookies();
 class Chatbot extends Component {
   messagesEnds;
   talkInput;
-
   constructor(props) {
     super(props);
 
@@ -21,6 +27,7 @@ class Chatbot extends Component {
     this.show = this.show.bind(this);
     this._handleQuickReplyPayload = this._handleQuickReplyPayload.bind(this);
     this._handleInputKeyPress = this._handleInputKeyPress.bind(this);
+    this._handleSendBtn = this._handleSendBtn.bind(this);
     this.state = {
       messages: [],
       showBot: true,
@@ -28,6 +35,7 @@ class Chatbot extends Component {
       welcomeSent: false,
       clientToken: false,
       regenerateToken: 0,
+      inputValue: '',
     };
 
     if (cookies.get('userID') === undefined) {
@@ -96,7 +104,6 @@ class Chatbot extends Component {
       );
 
       let says = {};
-      let that = this;
 
       if (res.data.queryResult.fulfillmentMessages) {
         for (let msg of res.data.queryResult.fulfillmentMessages) {
@@ -109,9 +116,9 @@ class Chatbot extends Component {
       }
 
       this.setState({regenerateToken: 0});
-    } catch (error) {
-      console.log(error);
-      if (error.response.status === 401 && this.state.regenerateToken < 1) {
+    } catch (e) {
+      console.log('Errors', e);
+      if (this.state.regenerateToken < 1) {
         this.setState({clientToken: false, regenerateToken: 1});
         this.df_client_call(request);
       } else {
@@ -144,7 +151,7 @@ class Chatbot extends Component {
     this.df_event_query('Welcome');
 
     if (window.location.pathname === '/shop' && !this.state.shopWelcomeSent) {
-      await this.resolveAfterXSeconds(2);
+      await this.resolveAfterXSeconds(1);
       this.df_event_query('WELCOME_SHOP');
       this.setState({shopWelcomeSent: true, showBot: true});
     }
@@ -180,10 +187,7 @@ class Chatbot extends Component {
     this.setState({showBot: false, messages: []});
   }
 
-  _handleQuickReplyPayload(event, payload, text) {
-    event.preventDefault();
-    event.stopPropagation();
-
+  _handleQuickReplyPayload(payload, text) {
     switch (payload) {
       case 'recommended_yes':
         this.df_event_query('SHOW_RECOMMENDATIONS');
@@ -204,17 +208,20 @@ class Chatbot extends Component {
     } else if (message.msg && message.msg.payload && message.msg.payload.cards) {
       return (
         <div key={i}>
-          <div className="card-panel grey lighten-5 z-depth-1">
+          <div className="card-panel grey">
             <div style={{overflow: 'hidden'}}>
               <div className="col s2">
-                <a className="btn-floating btn-large waves-effect waves-light red">
-                  {message.speaks}
-                </a>
+                <img
+                  style={{float: 'left', clear: 'both'}}
+                  src={bot}
+                  width="50px"
+                  height="50px"
+                />
               </div>
-              <div style={{overflow: 'auto', overflowY: 'scroll'}}>
+              <div style={{overflowX: 'scroll'}}>
                 <div
                   style={{
-                    height: 300,
+                    height: 240,
                     width: message.msg.payload.cards.length * 270,
                   }}
                 >
@@ -250,40 +257,45 @@ class Chatbot extends Component {
 
   _handleInputKeyPress(e) {
     if (e.key === 'Enter') {
-      this.df_text_query(e.target.value);
-      e.target.value = '';
+      if (e.target.value === '') {
+        console.log('Empty message');
+      } else {
+        this.df_text_query(e.target.value);
+        this.setState({inputValue: ''});
+      }
+    }
+  }
+
+  _handleSendBtn() {
+    this.talkInput = this.state.inputValue;
+    if (this.state.inputValue === '') {
+      console.log('Empty Message');
+    } else {
+      this.setState({inputValue: ''});
+      this.df_text_query(this.talkInput);
     }
   }
 
   render() {
     if (this.state.showBot) {
       return (
-        <div
-          style={{
-            minHeight: 400,
-            maxHeight: 700,
-            width: 360,
-            position: 'absolute',
-            bottom: 0,
-            right: 0,
-            border: '1px solid light-grey',
-          }}
-        >
-          <nav>
-            <div className="nav-wrapper">
-              <a className="brand-logo">JoBot</a>
-              <ul id="nav-mobile" className="right hide-on-med-and-down">
-                <li>
-                  <a onClick={this.hide}>Close</a>
-                </li>
-              </ul>
+        <div className="chatbox">
+          <nav className="chat-nav">
+            <div className="nav-image">
+              <img width="50" height="50" src={bots} />
+            </div>
+            <div className="nav-close">
+              <a style={{fontSize: '25px'}} onClick={this.hide}>
+                &#10005;
+              </a>
             </div>
           </nav>
-          <div
-            id="jobot"
-            style={{minHeight: 340, maxHeight: 340, width: '100%', overflow: 'auto'}}
-          >
-            {this.renderMessages(this.state.messages)}
+
+          <div className="msg-box">
+            <div className="msg-box-content">
+              {this.renderMessages(this.state.messages)}
+            </div>
+
             <div
               ref={el => {
                 this.messagesEnds = el;
@@ -291,50 +303,38 @@ class Chatbot extends Component {
               style={{float: 'left', clear: 'both'}}
             ></div>
           </div>
-          <div className="row" style={{marginBottom: 0}}>
-            <div className="input-field col s12">
-              <input
-                style={{marginBottom: 0}}
-                placeholder="type a message: "
-                type="text"
-                ref={input => {
-                  this.talkInput = input;
-                }}
-                onKeyPress={this._handleInputKeyPress}
-              />
+          <div className="input-msg">
+            <input
+              placeholder="Type a message...."
+              type="text"
+              ref={input => {
+                this.talkInput = input;
+              }}
+              value={this.state.inputValue}
+              onKeyPress={this._handleInputKeyPress}
+              onChange={event => this.setState({inputValue: event.target.value})}
+            />
+            <div className="send">
+              <div onClick={this._handleSendBtn} className="send-btn">
+                &#10147;
+              </div>
             </div>
           </div>
         </div>
       );
     } else {
       return (
-        <div
-          style={{
-            height: 40,
-            width: 400,
-            position: 'absolute',
-            bottom: 0,
-            right: 0,
-            border: '1px solid lightgrey',
+        <img
+          className="chat-icon"
+          src={chat}
+          width="60px"
+          height="60px"
+          onClick={this.show}
+          ref={el => {
+            this.messagesEnds = el;
           }}
-        >
-          <nav>
-            <div className="nav-wrapper">
-              <a className="brand-logo">JoBot</a>
-              <ul id="nav-mobile" className="right hide-on-med-and-down">
-                <li>
-                  <a onClick={this.show}>Show</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <div
-            ref={el => {
-              this.messagesEnds = el;
-            }}
-            style={{float: 'left', clear: 'both'}}
-          ></div>
-        </div>
+          style={{position: 'fixed', right: 50, bottom: 50, clear: 'both'}}
+        />
       );
     }
   }

@@ -4,16 +4,17 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import Header from './Header';
 import Landing from './pages/Landing';
 import Shop from './shop/Shop';
-import Chatbot from './chatbot/Chatbot';
+import About from './pages/About';
+import './App.css';
 
 const App = () => (
-  <div className="container">
+  <div className="main">
     <BrowserRouter>
-      <div>
+      <div style={{scrollbarColor: 'red yellow'}}>
         <Header />
         <Route exact path="/" component={Landing} />
         <Route exact path="/shop" component={Shop} />
-        <Chatbot />
+        <Route exact path="/about" component={About} />
       </div>
     </BrowserRouter>
   </div>

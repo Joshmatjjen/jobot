@@ -1,11 +1,12 @@
 import React from 'react';
+import './QuickReply.styles.css';
 
 const QuickReplay = props => {
   if (props.reply.payload) {
     return (
       <a
         style={{margin: 3}}
-        className="btn-floating btn-large wave s-effect waves-light blue"
+        className="ans-btn"
         onClick={() => props.click(props.reply.payload, props.reply.text)}
       >
         {props.reply.text}
@@ -13,11 +14,7 @@ const QuickReplay = props => {
     );
   } else {
     return (
-      <a
-        style={{margin: 3}}
-        className="btn-floating btn-large waves-effect waves-light blue"
-        href={props.reply.link}
-      >
+      <a className="ans-btn-more" href={props.reply.link}>
         {props.reply.text}
       </a>
     );

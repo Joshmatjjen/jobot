@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import QuickReply from './QuickReplay';
+import './QuickReplies.styles.css';
+
+import bot from '../../assets/bot.png';
 
 class QuickReplies extends Component {
   constructor(props) {
@@ -27,13 +30,14 @@ class QuickReplies extends Component {
 
   render() {
     return (
-      <div className="col s12 m8 offset-m2 16 offset-13">
-        <div className="card-panel grey lighten-5 z-depth-1">
-          <div className="row valign-wrapper">
-            <div className="col s2">
-              <a className="btn-floating btn-large waves-effect waves-light red">
+      <div className="container">
+        <div className="content m-2">
+          <div className="row ">
+            <div style={{padding: 5}}>
+              {/* <a className="btn-floating btn-large waves-effect waves-light black">
                 {this.props.speaks}
-              </a>
+              </a> */}
+              <img style={{float: 'left'}} src={bot} width="50px" height="50px" />
             </div>
             <div id="quick-replies" className="col s10">
               {this.props.text && <p>{this.props.text}</p>}

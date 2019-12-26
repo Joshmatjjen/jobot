@@ -1,27 +1,22 @@
 import React from 'react';
-// import image from '../../assets/Programmer-512.png'
+import person from '../../assets/Programmer-512.png';
+import bot from '../../assets/bot.png';
+import {Image} from 'react-bootstrap';
+import './Message.styles.css';
+
 const Message = props => (
-  <div className="col s12 m8 offset-m2 offset-l3">
-    <div className="card-panel grey lighten-5 z-depth-1">
-      <div className="row valign-wrapper">
-        {props.speaks === 'bot' && (
-          <div className="col s2">
-            <a className="btn-floating btn-large waves-effect waves-light red">
-              {props.speaks}
-            </a>
-          </div>
-        )}
+  <div className="container">
+    <div className="content m-2">
+      <div className="row p-2">
+        <div style={{padding: '5px'}}>
+          {props.speaks === 'bot' && <Image width="50" height="50" src={bot} />}
+        </div>
         <div className="col s10">
           <span className="black-text">{props.text}</span>
         </div>
-        {props.speaks === 'me' && (
-          <div className="col s2">
-            <a className="btn-floating btn-large waves-effect waves-light green">
-              {/* <i class="material-icons">add</i> */}
-              {props.speaks}
-            </a>
-          </div>
-        )}
+        <div>
+          {props.speaks === 'me' && <Image width="50" height="50" src={person} />}
+        </div>
       </div>
     </div>
   </div>
