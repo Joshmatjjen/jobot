@@ -4,6 +4,7 @@
   height: 300px;
   width: 100%;
   border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -18,8 +19,28 @@
   width: 100%;
 }
 
-.card-contents {
-  /* padding: 2px 16px; */
+.card-title {
+  /* margin: 20px; */
+  font-weight: 500;
+  color: black
 }
 
-.card-action {}
+.card-contents {
+  padding: 2px 8px;
+  font-size: 15px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.card-title {
+  margin-bottom: 0px;
+}
+
+.card-des {
+  margin: 5px 0px;
+}
+
+.card-action {
+  font-size: 15px;
+}

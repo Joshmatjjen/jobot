@@ -6,11 +6,11 @@ const Card = props => (
     <div className="card-layout">
       <div className="card-img">
         <img alt={props.payload.header} src={props.payload.image} />
-        <span className="card-title">{props.payload.header}</span>
       </div>
       <div className="card-contents">
-        <p>{props.payload.description} </p>
-        <p>
+        <p className="card-title">{props.payload.header}</p>
+        <p className="card-des">{props.payload.description} </p>
+        <p className="card-price">
           <a>{props.payload.price}</a>
         </p>
       </div>

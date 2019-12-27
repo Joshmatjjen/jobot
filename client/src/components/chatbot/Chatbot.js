@@ -333,7 +333,7 @@ class Chatbot extends Component {
           ref={el => {
             this.messagesEnds = el;
           }}
-          style={{position: 'fixed', right: 50, bottom: 50, clear: 'both'}}
+          style={{position: 'fixed', right: 20, bottom: 50, clear: 'both'}}
         />
       );
     }

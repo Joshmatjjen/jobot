@@ -1,3 +1,19 @@
 .home {
   cursor: url('../../assets/cursor.png'), auto;
 }
+
+.Land-content {
+  text-align: center;
+
+}
+
+.Land-content h1 {
+  float: left;
+  margin: 100px 0px 0px 50px;
+  color: #e48e66;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.Land-content img {
+  float: right;
+}
