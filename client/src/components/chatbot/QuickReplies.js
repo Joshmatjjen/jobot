@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import QuickReply from './QuickReplay';
 import './QuickReplies.styles.css';
+import Linkify from 'react-linkify';
 
 import bot from '../../assets/bot.png';
 
@@ -39,10 +40,12 @@ class QuickReplies extends Component {
               </a> */}
               <img style={{float: 'left'}} src={bot} width="50px" height="50px" />
             </div>
-            <div id="quick-replies" className="col s10">
-              {this.props.text && <p>{this.props.text}</p>}
-              {this.renderQuickReplies(this.props.payload)}
-            </div>
+            <Linkify>
+              <div id="quick-replies" className="col s10">
+                {this.props.text && <p>{this.props.text}</p>}
+                {this.renderQuickReplies(this.props.payload)}
+              </div>
+            </Linkify>
           </div>
         </div>
       </div>

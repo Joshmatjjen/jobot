@@ -26,7 +26,8 @@
     "express": "^4.17.1",
     "google-oauth-jwt": "^0.2.0",
     "http-proxy-middleware": "^0.20.0",
-    "mongoose": "^5.8.1"
+    "mongoose": "^5.8.1",
+    "react-linkify": "^1.0.0-alpha"
   },
   "devDependencies": {
     "concurrently": "^5.0.0",

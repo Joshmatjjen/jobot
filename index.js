@@ -28,6 +28,7 @@ mongoose
 require('./models/Registration');
 require('./models/Demand');
 require('./models/Coupons');
+require('./models/Joshmat');
 
 app.use(bodyParser.json());
 

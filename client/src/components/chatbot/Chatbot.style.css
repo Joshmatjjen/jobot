@@ -26,10 +26,16 @@
 }
 
 .nav-image {
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   margin: 5px 20px;
   /* cursor: url('../../assets/click.cur'), auto; */
   cursor: pointer;
+}
+
+.nav-image p {
+  margin: 15px 0px 0px 20px;
+  color: #696969;
 }
 
 .nav-close {

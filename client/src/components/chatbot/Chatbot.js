@@ -3,13 +3,11 @@ import axios from 'axios/index';
 import {withRouter} from 'react-router-dom';
 import Cookies from 'universal-cookie';
 import {v4 as uuid} from 'uuid';
+import Linkify from 'react-linkify';
 
 import Message from './Message';
 import Card from './Card';
 import QuickReplies from './QuickReplies';
-
-// import {Image} from 'react-bootstrap';
-// // import {Nav} from 'react-bootstrap';
 
 import bot from '../../assets/bot.png';
 import bots from '../../assets/bots.png';
@@ -30,18 +28,35 @@ class Chatbot extends Component {
     this._handleSendBtn = this._handleSendBtn.bind(this);
     this.state = {
       messages: [],
-      showBot: true,
+      showBot: false,
       shopWelcomeSent: false,
       welcomeSent: false,
       clientToken: false,
       regenerateToken: 0,
       inputValue: '',
+      sentText: 'Waiting for bot...',
     };
 
     if (cookies.get('userID') === undefined) {
       cookies.set('userID', uuid(), {path: '/'});
     }
   }
+
+  //   😂
+  //   😁 😊
+  //   😊 Let me tell you a joke:
+  // 🥰  😍
+  // 💕  😘
+  // 🤗
+  // 😕  😢
+  // 🤪   👨‍💻
+  // 😌
+  // 🤐
+  // 🦜
+  // 🤓
+
+  // 😎
+  // 🙂
 
   async df_text_query(text) {
     let says = {
@@ -52,9 +67,7 @@ class Chatbot extends Component {
         },
       },
     };
-
     this.setState({messages: [...this.state.messages, says]});
-
     const request = {
       queryInput: {
         text: {
@@ -104,15 +117,22 @@ class Chatbot extends Component {
       );
 
       let says = {};
-
+      this.setState({sentText: 'Typing.....'});
+      await this.resolveAfterXSeconds(3);
+      this.setState({sentText: ''});
+      console.log(this.state.sentText);
       if (res.data.queryResult.fulfillmentMessages) {
         for (let msg of res.data.queryResult.fulfillmentMessages) {
           says = {
             speaks: 'bot',
             msg: msg,
           };
-          this.setState({messages: [...this.state.messages, says]});
+          this.setState({
+            messages: [...this.state.messages, says],
+          });
+          await this.resolveAfterXSeconds(2);
         }
+        this.setState({sentText: ''});
       }
 
       this.setState({regenerateToken: 0});
@@ -148,14 +168,22 @@ class Chatbot extends Component {
   }
 
   async componentDidMount() {
-    this.df_event_query('Welcome');
+    if (this.state.showBot === false) {
+      await this.resolveAfterXSeconds(15);
+      this.setState({showBot: true});
+    }
 
-    if (window.location.pathname === '/shop' && !this.state.shopWelcomeSent) {
+    if (window.location.pathname === '/') {
+      this.df_event_query('Welcome');
+    } else if (window.location.pathname === '/shop' && !this.state.shopWelcomeSent) {
       await this.resolveAfterXSeconds(1);
       this.df_event_query('WELCOME_SHOP');
       this.setState({shopWelcomeSent: true, showBot: true});
+    } else if (window.location.pathname === '/about' && !this.state.shopWelcomeSent) {
+      await this.resolveAfterXSeconds(1);
+      this.df_event_query('ABOUT_JOSHMAT');
+      this.setState({showBot: true});
     }
-
     this.props.history.listen(() => {
       if (
         this.props.history.location.pathname === '/shop' &&
@@ -167,18 +195,19 @@ class Chatbot extends Component {
     });
   }
 
-  componentDidUpdate() {
+  async componentDidUpdate() {
     this.messagesEnds.scrollIntoView({behaviour: 'smooth'});
     if (this.talkInput) {
       this.talkInput.focus();
     }
   }
 
-  show(event) {
-    event.preventDefault();
-    event.stopPropagation();
-    this.setState({showBot: true});
-    this.componentDidMount();
+  async show() {
+    this.setState({sentText: 'Waiting for bot...'});
+    await this.setState({showBot: true});
+    if (this.state.showBot === true) {
+      this.componentDidMount();
+    }
   }
 
   hide(event) {
@@ -187,13 +216,15 @@ class Chatbot extends Component {
     this.setState({showBot: false, messages: []});
   }
 
-  _handleQuickReplyPayload(payload, text) {
+  async _handleQuickReplyPayload(payload, text) {
     switch (payload) {
       case 'recommended_yes':
         this.df_event_query('SHOW_RECOMMENDATIONS');
         break;
       default:
-        this.df_text_query(text);
+        await this.resolveAfterXSeconds(5);
+        console.log('done waiting');
+        await this.df_text_query(text);
         break;
     }
   }
@@ -283,6 +314,7 @@ class Chatbot extends Component {
           <nav className="chat-nav">
             <div className="nav-image">
               <img width="50" height="50" src={bots} />
+              <p>{this.state.sentText}</p>
             </div>
             <div className="nav-close">
               <a style={{fontSize: '25px'}} onClick={this.hide}>
@@ -293,7 +325,7 @@ class Chatbot extends Component {
 
           <div className="msg-box">
             <div className="msg-box-content">
-              {this.renderMessages(this.state.messages)}
+              <Linkify>{this.renderMessages(this.state.messages)}</Linkify>
             </div>
 
             <div
