@@ -4,7 +4,7 @@
 
 .Land-content {
   text-align: center;
-
+  /* display: flex; */
 }
 
 .Land-content h1 {
@@ -14,6 +14,32 @@
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
+.welcome-text {
+  width: 300px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+.welcome-text .wel-content {
+  font-size: 21px;
+  padding: 20px 0 0 30px;
+
+  font-family: 'Raleway', sans-serif;
+}
+
+h6 a {
+  color: #e48e66e3;
+}
+
 .Land-content img {
   float: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .Land-content img {
+    float: right;
+    padding-right: 50px;
+  }
 }

@@ -11,6 +11,15 @@
   cursor: url('../../assets/cursor.png'), auto;
 }
 
+.dot {
+  height: 10px;
+  width: 10px;
+  background-image: linear-gradient(to bottom, #13e213, #00ff00, #76ff8c);
+  margin: 5px 0 0 2px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 .card-box {
   border: none;
   box-shadow: 2px 10px 18px rgb(207, 203, 203);

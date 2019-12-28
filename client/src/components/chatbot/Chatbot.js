@@ -169,7 +169,7 @@ class Chatbot extends Component {
 
   async componentDidMount() {
     if (this.state.showBot === false) {
-      await this.resolveAfterXSeconds(15);
+      await this.resolveAfterXSeconds(5);
       this.setState({showBot: true});
     }
 
@@ -314,6 +314,7 @@ class Chatbot extends Component {
           <nav className="chat-nav">
             <div className="nav-image">
               <img width="50" height="50" src={bots} />
+              <span class="dot"></span>
               <p>{this.state.sentText}</p>
             </div>
             <div className="nav-close">

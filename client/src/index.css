@@ -25,12 +25,10 @@
 }
 
 html {
-  white-space: pre-line;
   cursor: url('../src/assets/cursor.png'), auto;
   background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(253, 253, 253), rgb(252, 252, 252), rgb(255, 255, 255), rgb(255, 255, 255));
 }
 
 body {
-  white-space: pre-line;
   cursor: url('../src/assets/cursor.png'), auto;
 }
