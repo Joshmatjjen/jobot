@@ -32,6 +32,10 @@ const Header = () => {
             Hire Me
           </Link>
         </li> */}
+
+        <li>
+          <div className="version">v1.0</div>
+        </li>
       </ul>
     </header>
   );

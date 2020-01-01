@@ -40,6 +40,11 @@ a:hover {
   /* background-color: #fff; */
 }
 
+.header li .version {
+  padding: 20px;
+  color: #000000;
+}
+
 .header li a {
   display: block;
   padding: 20px;

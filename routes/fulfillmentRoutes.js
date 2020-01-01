@@ -147,8 +147,7 @@ module.exports = app => {
       );
 
       let responseText = `
-        You want to learn about ${agent.parameters.joshmats ||
-          agent.parameters.joshmats1}.
+       ${agent.parameters.joshmats || agent.parameters.joshmats1}.
       `;
       let badResponseText = ` 😢 Sorry i dont have an answer to your question, Please ask another one. `;
 
