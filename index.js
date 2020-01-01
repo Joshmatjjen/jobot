@@ -29,6 +29,8 @@ require('./models/Registration');
 require('./models/Demand');
 require('./models/Coupons');
 require('./models/Joshmat');
+require('./models/BotFriends');
+require('./models/Jokes');
 
 app.use(bodyParser.json());
 

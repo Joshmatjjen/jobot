@@ -11,7 +11,7 @@ const Header = () => {
         <h1>JoBot</h1>
       </Link>
       <input className="menu-btn" type="checkbox" id="menu-btn" />
-      <label className="menu-icon" for="menu-btn">
+      <label className="menu-icon">
         <span className="navicon"></span>
       </label>
       <ul className="menu">
@@ -27,11 +27,11 @@ const Header = () => {
           </Link>
         </li>
 
-        <li>
+        {/* <li>
           <Link to={'/'} className="page hire-me">
             Hire Me
           </Link>
-        </li>
+        </li> */}
       </ul>
     </header>
   );

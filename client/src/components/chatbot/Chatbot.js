@@ -35,6 +35,7 @@ class Chatbot extends Component {
       regenerateToken: 0,
       inputValue: '',
       sentText: 'Waiting for bot...',
+      online_status: '#ff0000',
     };
 
     if (cookies.get('userID') === undefined) {
@@ -57,6 +58,8 @@ class Chatbot extends Component {
 
   // 😎
   // 🙂
+  // 😐
+  // 🤖
 
   async df_text_query(text) {
     let says = {
@@ -76,6 +79,7 @@ class Chatbot extends Component {
         },
       },
     };
+    this.setState({sentText: 'Sending Message...'});
     await this.df_client_call(request);
   }
 
@@ -115,9 +119,10 @@ class Chatbot extends Component {
         request,
         config
       );
+      console.log(process.env.REACT_APP_GOOGLE_PROJECT_ID);
 
       let says = {};
-      this.setState({sentText: 'Typing.....'});
+      this.setState({sentText: 'Parrot Typing.....', online_status: '#00fa00'});
       await this.resolveAfterXSeconds(3);
       this.setState({sentText: ''});
       console.log(this.state.sentText);
@@ -137,11 +142,13 @@ class Chatbot extends Component {
 
       this.setState({regenerateToken: 0});
     } catch (e) {
-      console.log('Errors', e);
-      if (this.state.regenerateToken < 1) {
-        this.setState({clientToken: false, regenerateToken: 1});
-        this.df_client_call(request);
+      if (e.response && this.state.regenerateToken < 1) {
+        if (e.response.status === 401 && this.state.regenerateToken < 1) {
+          this.setState({clientToken: false, regenerateToken: 1});
+          this.df_client_call(request);
+        }
       } else {
+        this.setState({online_status: '#ff0000'});
         let says = {
           speaks: 'bot',
           msg: {
@@ -174,22 +181,21 @@ class Chatbot extends Component {
     }
 
     if (window.location.pathname === '/') {
-      this.df_event_query('Welcome');
-    } else if (window.location.pathname === '/shop' && !this.state.shopWelcomeSent) {
+      await this.df_event_query('Welcome');
+      this.setState({sentText: 'Parrot Typing.....'});
+      this.df_event_query('WelcomeName');
+    } else if (window.location.pathname === '/shop') {
       await this.resolveAfterXSeconds(1);
-      this.df_event_query('WELCOME_SHOP');
+      this.df_event_query('SHOW_RECOMMENDATIONS');
       this.setState({shopWelcomeSent: true, showBot: true});
-    } else if (window.location.pathname === '/about' && !this.state.shopWelcomeSent) {
+    } else if (window.location.pathname === '/about') {
       await this.resolveAfterXSeconds(1);
       this.df_event_query('ABOUT_JOSHMAT');
       this.setState({showBot: true});
     }
-    this.props.history.listen(() => {
-      if (
-        this.props.history.location.pathname === '/shop' &&
-        !this.state.shopWelcomeSent
-      ) {
-        this.df_event_query('WELCOME_SHOP');
+    this.props.history.listen(async () => {
+      if (this.props.history.location.pathname === '/shop') {
+        this.df_event_query('SHOW_RECOMMENDATIONS');
         this.setState({shopWelcomeSent: true, showBot: true});
       }
     });
@@ -213,7 +219,12 @@ class Chatbot extends Component {
   hide(event) {
     event.preventDefault();
     event.stopPropagation();
-    this.setState({showBot: false, messages: []});
+    this.setState({
+      showBot: false,
+      shopWelcomeSent: false,
+      online_status: '#ff0000',
+      messages: [],
+    });
   }
 
   async _handleQuickReplyPayload(payload, text) {
@@ -222,9 +233,9 @@ class Chatbot extends Component {
         this.df_event_query('SHOW_RECOMMENDATIONS');
         break;
       default:
+        await this.df_text_query(text);
         await this.resolveAfterXSeconds(5);
         console.log('done waiting');
-        await this.df_text_query(text);
         break;
     }
   }
@@ -314,7 +325,10 @@ class Chatbot extends Component {
           <nav className="chat-nav">
             <div className="nav-image">
               <img width="50" height="50" src={bots} />
-              <span class="dot"></span>
+              <span
+                className="dot"
+                style={{backgroundColor: this.state.online_status}}
+              ></span>
               <p>{this.state.sentText}</p>
             </div>
             <div className="nav-close">

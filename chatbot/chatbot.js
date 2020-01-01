@@ -21,6 +21,7 @@ const sessionClient = new dialogflow.SessionsClient({
 
 // const Registration = require('../models/Registration');
 const Registration = mongoose.model('registration');
+const BotFriend = mongoose.model('botFriend');
 
 // console.log(sessionClient);
 
@@ -98,9 +99,32 @@ module.exports = {
           self.saveRegistration(queryResult.parameters.fields);
         }
         break;
+
+      case 'aboutjoshmat-yes':
+        if (queryResult.allRequiredParamsPresent) {
+          self.botFriend(queryResult.parameters.fields);
+        }
+        break;
     }
 
     return responses;
+  },
+
+  botFriend: async function(fields) {
+    const botFriends = new BotFriend({
+      name: fields.name.stringValue,
+      gender: fields.gender.stringValue,
+      mobile: fields.mobile.stringValue,
+      social_media: fields.social_media.stringValue,
+      dateSent: Date.now(),
+    });
+    console.log(botFriends);
+    try {
+      let reg = await botFriends.save();
+      console.log(reg);
+    } catch (err) {
+      console.log(err);
+    }
   },
 
   saveRegistration: async function(fields) {

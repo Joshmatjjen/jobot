@@ -14,7 +14,9 @@
 .dot {
   height: 10px;
   width: 10px;
-  background-image: linear-gradient(to bottom, #13e213, #00ff00, #76ff8c);
+  /* background-image: linear-gradient(to bottom, #13e213, #00ff00, #76ff8c); */
+  /* background-color: #00fa00; */
+  /* background-color: #ff0000; */
   margin: 5px 0 0 2px;
   border-radius: 50%;
   display: inline-block;

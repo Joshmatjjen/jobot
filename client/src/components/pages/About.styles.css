@@ -1,4 +1,4 @@
-.shop {
+.home {
   cursor: url('../../assets/cursor.png'), auto;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .welcome-text {
-  width: 300px;
+  width: 400px;
   float: left;
   display: flex;
   flex-direction: column;
