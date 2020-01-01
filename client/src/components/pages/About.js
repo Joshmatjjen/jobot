@@ -6,7 +6,7 @@ const About = () => {
     <div class="home" style={{textAlign: 'center', height: '100%', width: '100%'}}>
       <div className="About-content">
         <div className="welcome-text">
-          <h1>Do you want to learn more about me?</h1>
+          <h2>Do you want to learn more about me?</h2>
           <h6 className="wel-content">
             <a
               href=""
