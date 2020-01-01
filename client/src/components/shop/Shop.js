@@ -6,7 +6,7 @@ const Shop = () => (
   <div className="shop" style={{textAlign: 'center', height: '100%', width: '100%'}}>
     <div className="About-content">
       <div className="welcome-text">
-        <h1>Looking for an Item?</h1>
+        <h1>Looking for an online course?</h1>
         <h6 className="wel-content">
           <a
             href=""
