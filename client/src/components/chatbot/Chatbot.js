@@ -60,6 +60,7 @@ class Chatbot extends Component {
   // 😎
   // 🙂
   // 😐
+  // 🤣
   // 🤖
 
   async df_text_query(text) {

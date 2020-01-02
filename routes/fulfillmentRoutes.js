@@ -91,7 +91,9 @@ module.exports = app => {
       });
       try {
         let reg = await botFriends.save();
-
+        await agent.add(
+          '😊Thanks for typing in your details soon you and Joshmat would be friends.'
+        );
         const payload = {
           text: 'Who whould you like to know about?',
           quick_replies: [
