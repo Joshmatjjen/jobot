@@ -11,7 +11,7 @@ const Header = () => {
         <h1>JoBot</h1>
       </Link>
       <input className="menu-btn" type="checkbox" id="menu-btn" />
-      <label className="menu-icon">
+      <label className="menu-icon" for="menu-btn">
         <span className="navicon"></span>
       </label>
       <ul className="menu">
@@ -26,16 +26,16 @@ const Header = () => {
             About Me
           </Link>
         </li>
-
+        <li>
+          <a target="_blank" href={'https://github.com/Joshmatjjen'} className="version">
+            v1.0
+          </a>
+        </li>
         {/* <li>
           <Link to={'/'} className="page hire-me">
             Hire Me
           </Link>
         </li> */}
-
-        <li>
-          <div className="version">v1.0</div>
-        </li>
       </ul>
     </header>
   );

@@ -9,7 +9,7 @@
 
 .About-content h2 {
   float: left;
-  margin: 100px 0px 0px 50px;
+  /* margin: 100px 0px 0px 50px; */
   color: #e48e66;
   font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -39,8 +39,14 @@ h6 a {
 }
 
 @media only screen and (max-width: 600px) {
-  .About-content img {
-    float: right;
-    padding-right: 50px;
+  .About-content h2 {
+    float: left;
+    margin: 100px 0px 0px 50px;
+    color: #e48e66;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+
+  .welcome-text {
+    width: 300px;
   }
 }

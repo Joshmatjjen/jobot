@@ -113,6 +113,15 @@
   color: #e48e66;
 }
 
+.chat-icon {
+  /* width: 50px;
+  height: 50px; */
+  position: 'fixed';
+  /* right: 20; */
+  bottom: 70;
+  /* clear: 'both'; */
+}
+
 @media only screen and (max-width: 600px) {
   .chatbox {
     height: 100%;
