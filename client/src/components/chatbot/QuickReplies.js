@@ -3,7 +3,7 @@ import QuickReply from './QuickReplay';
 import './QuickReplies.styles.css';
 import Linkify from 'react-linkify';
 
-import bot from '../../assets/bot.png';
+import bot from '../../assets/parrot.png';
 
 class QuickReplies extends Component {
   constructor(props) {

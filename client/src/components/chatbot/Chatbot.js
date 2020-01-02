@@ -9,8 +9,8 @@ import Message from './Message';
 import Card from './Card';
 import QuickReplies from './QuickReplies';
 
-import bot from '../../assets/bot.png';
-import bots from '../../assets/bots.png';
+// import bot from '../../assets/bot.png';
+import bot from '../../assets/parrot.png';
 import chat from '../../assets/chat.png';
 import './Chatbot.style.css';
 
@@ -18,6 +18,7 @@ const cookies = new Cookies();
 class Chatbot extends Component {
   messagesEnds;
   talkInput;
+
   constructor(props) {
     super(props);
 
@@ -246,7 +247,14 @@ class Chatbot extends Component {
 
   renderOneMessages(message, i) {
     if (message.msg && message.msg.text && message.msg.text.text) {
-      return <Message key={i} speaks={message.speaks} text={message.msg.text.text} />;
+      return (
+        <Message
+          key={i}
+          speaks={message.speaks}
+          imgs={message.msg.text.text === 'male' ? true : false}
+          text={message.msg.text.text}
+        />
+      );
     } else if (message.msg && message.msg.payload && message.msg.payload.cards) {
       return (
         <div key={i}>
@@ -324,7 +332,7 @@ class Chatbot extends Component {
         <div className="chatbox">
           <nav className="chat-nav">
             <div className="nav-image">
-              <img width="50" height="50" src={bots} />
+              <img width="50" height="50" src={bot} />
               <span
                 className="dot"
                 style={{backgroundColor: this.state.online_status}}

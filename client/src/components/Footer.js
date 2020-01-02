@@ -16,13 +16,17 @@ const Footer = () => (
       <a target="_blank" href="https://www.facebook.com/JoshmatJjen" class="face">
         <img src={facebook} alt="" />
       </a>
-      <a href="https://www.instagram.com/joshmatjjen/" class="insta">
+      <a target="_blank" href="https://www.instagram.com/joshmatjjen/" class="insta">
         <img src={instagram} alt="" />
       </a>
-      <a href="https://twitter.com/Joshmat_jjen" class="tweet">
+      <a target="_blank" href="https://twitter.com/Joshmat_jjen" class="tweet">
         <img src={twitter} alt="" />
       </a>
-      <a href="https://www.linkedin.com/in/joshmat-jjen-245771161/" class="linked">
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/joshmat-jjen-245771161/"
+        class="linked"
+      >
         <img src={linkedin} alt="" />
       </a>
     </div>
