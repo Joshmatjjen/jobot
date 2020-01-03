@@ -14,6 +14,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // Learn more about service workers: https://bit.ly/CRA-PWA
 // When ready...
 // console.log('Platform is = :', Platform.OS);
+
 if (Platform.OS == 'Android' || Platform.OS === 'iOS') {
   //For iPhone and Andriod To remove Address bar when viewing website on Safari Mobile
   // When ready...
