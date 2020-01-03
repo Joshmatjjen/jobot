@@ -384,13 +384,13 @@ class Chatbot extends Component {
         <img
           className="chat-icon"
           src={chat}
-          width="60px"
-          height="60px"
+          width="65px"
+          height="65px"
           onClick={this.show}
           ref={el => {
             this.messagesEnds = el;
           }}
-          style={{position: 'fixed', right: 20, bottom: 80, clear: 'both'}}
+          style={{position: 'fixed', right: 20, bottom: 100, clear: 'both'}}
         />
       );
     }
