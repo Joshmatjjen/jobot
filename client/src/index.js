@@ -22,7 +22,7 @@ if (Platform.OS == 'Android' || Platform.OS === 'iOS') {
     // Set a timeout...
     setTimeout(function() {
       // Hide the address bar!
-      window.scrollTo(1, 0);
+      window.scrollTo(0, 1);
     }, 0);
   });
 }
