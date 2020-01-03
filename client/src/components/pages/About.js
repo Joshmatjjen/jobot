@@ -19,7 +19,7 @@ const About = () => {
           </h6>
         </div>
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQF8aRS3T25h4XKDC9ZcREfYdjQVru3o0kbebrCn2oitq79tCtO"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzRF5rl3rj9USI3JpelxYZI3jISrvOUzJJogxxJKPmVHw4wCAh"
           alt=""
         />
       </div>
