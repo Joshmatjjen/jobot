@@ -13,8 +13,8 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 // When ready...
-console.log('Platform is = :', Platform.OS);
-if (Platform.OS == 'android' || Platform.OS === 'ios') {
+// console.log('Platform is = :', Platform.OS);
+if (Platform.OS == 'Android' || Platform.OS === 'iOS') {
   //For iPhone and Andriod To remove Address bar when viewing website on Safari Mobile
   // When ready...
   window.addEventListener('load', function() {

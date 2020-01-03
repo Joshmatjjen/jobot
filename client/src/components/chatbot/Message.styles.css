@@ -8,6 +8,10 @@
   box-shadow: 1px 5px 18px rgb(226, 226, 226);
   border-radius: 10px;
   padding: 10px;
+  /* font-family: 'Raleway',
+    sans-serif; */
+  font-family: 'Roboto',
+    sans-serif;
 }
 
 .msg-data {
