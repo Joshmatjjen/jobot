@@ -13,6 +13,7 @@ import QuickReplies from './QuickReplies';
 import bot from '../../assets/parrot.png';
 import chat from '../../assets/chat.png';
 import './Chatbot.style.css';
+import Platform from 'react-platform-js';
 
 const cookies = new Cookies();
 class Chatbot extends Component {
@@ -38,7 +39,6 @@ class Chatbot extends Component {
       sentText: 'Waiting for bot...',
       online_status: '#ff0000',
     };
-
     if (cookies.get('userID') === undefined) {
       cookies.set('userID', uuid(), {path: '/'});
     }
@@ -86,6 +86,7 @@ class Chatbot extends Component {
   }
 
   async df_event_query(event) {
+    console.log('Platform is = ', Platform.OS);
     const request = {
       queryInput: {
         event: {

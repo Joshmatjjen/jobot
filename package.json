@@ -28,7 +28,8 @@
     "http-proxy-middleware": "^0.20.0",
     "mongoose": "^5.8.1",
     "mongoose-simple-random": "^0.4.1",
-    "react-linkify": "^1.0.0-alpha"
+    "react-linkify": "^1.0.0-alpha",
+    "react-platform-js": "0.0.1"
   },
   "devDependencies": {
     "concurrently": "^5.0.0",
