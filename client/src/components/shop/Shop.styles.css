@@ -44,3 +44,16 @@ h6 a {
     padding-right: 50px;
   }
 }
+
+@media only screen and (max-height: 500px) {
+  .Shop-content img {
+    display: none;
+  }
+
+  .Shop-content h3 {
+    float: left;
+    margin: 70px 0px 0px 50px;
+    color: #e48e66;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+}

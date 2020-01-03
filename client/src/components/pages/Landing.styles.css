@@ -4,7 +4,6 @@
 
 .Land-content {
   text-align: center;
-  /* display: flex; */
 }
 
 .Land-content h1 {
@@ -34,6 +33,7 @@ h6 a {
 }
 
 .Land-content img {
+  position: relative;
   float: right;
 }
 
@@ -41,5 +41,18 @@ h6 a {
   .Land-content img {
     float: right;
     padding-right: 50px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .Land-content img {
+    display: none;
+  }
+
+  .Land-content h1 {
+    float: left;
+    margin: 70px 0px 0px 50px;
+    color: #e48e66;
+    font-family: 'Montserrat Alternates', sans-serif;
   }
 }
