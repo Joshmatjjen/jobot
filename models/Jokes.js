@@ -6,6 +6,7 @@ const jokesSchema = new Schema({
   name: String,
   type: String,
   value: String,
+  dateSent: Date,
 });
 
 jokesSchema.plugin(random);

@@ -22,7 +22,8 @@ module.exports = app => {
         name: 'jokes',
         type: 'top',
         value:
-          'Doctor says to his patient: "You have cancer and Alzheimer." - Patient: "At least I don\'t have cancer."',
+          'Teacher: "Kids, what does the chicken give you?" -Student: "Meat!" -Teacher: "Very good! Now what does the pig give you?" -Student: "Bacon!" -Teacher: "Great! And what does the fat cow give you?" -Student: "Homework!"',
+        dateSent: Date.now(),
       });
       try {
         let reg = await joke.save();
