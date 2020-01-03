@@ -51,6 +51,7 @@ h6 a {
   }
 
   .About-content img {
-    width: 400px;
+    /* width: 400px; */
+    padding-right: 200px;
   }
 }

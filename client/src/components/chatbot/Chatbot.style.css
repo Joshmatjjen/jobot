@@ -11,6 +11,7 @@
   cursor: url('../../assets/cursor.png'), auto;
 }
 
+
 .dot {
   height: 10px;
   width: 10px;
@@ -113,14 +114,7 @@
   color: #e48e66;
 }
 
-.chat-icon {
-  /* width: 50px;
-  height: 50px; */
-  position: 'fixed';
-  /* right: 20; */
-  bottom: 70;
-  /* clear: 'both'; */
-}
+
 
 @media only screen and (max-width: 600px) {
   .chatbox {
@@ -142,10 +136,5 @@
   .msg-box {
     height: 100%;
     padding: 60px 0 45px 0;
-  }
-
-  .chat-icon {
-    width: 50px;
-    height: 50px;
   }
 }
