@@ -34,7 +34,7 @@ h6 a {
 }
 
 .About-content img {
-
+  padding-top: 100px;
   float: right;
 }
 
@@ -52,7 +52,7 @@ h6 a {
 
   .About-content img {
     /* width: 400px; */
-    padding-right: 200px;
+    /* padding-right: 20px; */
   }
 }
 
