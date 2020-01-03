@@ -2,12 +2,12 @@
   cursor: url('../../assets/cursor.png'), auto;
 }
 
-.About-content {
+.Shop-content {
   text-align: center;
   /* display: flex; */
 }
 
-.About-content h2 {
+.Shop-content h2 {
   float: left;
   margin: 100px 0px 0px 50px;
   color: #e48e66;
@@ -33,13 +33,13 @@ h6 a {
   color: #e48e66e3;
 }
 
-.About-content img {
+.Shop-content img {
 
   float: right;
 }
 
 @media only screen and (max-width: 600px) {
-  .About-content img {
+  .Shop-content img {
     float: right;
     padding-right: 50px;
   }

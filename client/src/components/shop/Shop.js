@@ -63,7 +63,7 @@ window.onload = function() {
 
 const Shop = () => (
   <div className="shop" style={{textAlign: 'center', height: '100%', width: '100%'}}>
-    <div className="About-content">
+    <div className="Shop-content">
       <div className="welcome-text">
         <h2>Looking for an online course?</h2>
         <h6 className="wel-content">

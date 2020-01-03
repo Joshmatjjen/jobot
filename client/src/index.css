@@ -24,6 +24,11 @@
   background-image: linear-gradient(#b46f4f, #cec366);
 }
 
+html,
+body {
+  height: 100%;
+}
+
 html {
   cursor: url('../src/assets/cursor.png'), auto;
   background-color: white;

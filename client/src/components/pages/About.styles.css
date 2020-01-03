@@ -49,4 +49,8 @@ h6 a {
   .welcome-text {
     width: 300px;
   }
+
+  .About-content img {
+    width: 400px;
+  }
 }
