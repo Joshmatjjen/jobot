@@ -179,7 +179,7 @@ class Chatbot extends Component {
 
   async componentDidMount() {
     if (this.state.showBot === false) {
-      await this.resolveAfterXSeconds(5);
+      await this.resolveAfterXSeconds(3);
       this.setState({showBot: true});
     }
 

@@ -137,10 +137,7 @@ module.exports = app => {
 
     async function joshmat(agent) {
       let Jmt = await Joshmat.findOne({
-        question:
-          agent.parameters.joshmats ||
-          agent.parameters.joshmats1 ||
-          agent.parameters.joshmats2,
+        question: agent.parameters.joshmats || agent.parameters.joshmats1,
       });
 
       let responseText = `
