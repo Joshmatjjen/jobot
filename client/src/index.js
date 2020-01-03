@@ -19,6 +19,9 @@ if (Platform.OS == 'Android' || Platform.OS === 'iOS') {
   //For iPhone and Andriod To remove Address bar when viewing website on Safari Mobile
   // When ready...
   window.addEventListener('load', function() {
+    window.document.statusbar.enable = false;
+    window.document.titlebar.enable = false;
+    window.document.addressbar.enable = false;
     // Set a timeout...
     setTimeout(function() {
       // Hide the address bar!
