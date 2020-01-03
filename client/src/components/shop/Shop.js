@@ -65,15 +65,15 @@ const Shop = () => (
   <div className="shop" style={{textAlign: 'center', height: '100%', width: '100%'}}>
     <div className="Shop-content">
       <div className="welcome-text">
-        <h2>Looking for an online course?</h2>
+        <h3>Looking for an online course?</h3>
         <h6 className="wel-content">
           <a
             href=""
-            class="typewrite"
+            className="typewrite"
             data-period="2000"
             data-type='[ "Recommend a course for me", "Recommendations", "What are the best courses?", "Give me recommendations", "Give me recommendations" ]'
           >
-            <span class="wrap"></span>
+            <span className="wrap"></span>
           </a>
         </h6>
       </div>

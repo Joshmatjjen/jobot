@@ -7,9 +7,9 @@
   /* display: flex; */
 }
 
-.Shop-content h2 {
+.Shop-content h3 {
   float: left;
-  margin: 100px 0px 0px 50px;
+  margin: 150px 0px 0px 50px;
   color: #e48e66;
   font-family: 'Montserrat Alternates', sans-serif;
 }
