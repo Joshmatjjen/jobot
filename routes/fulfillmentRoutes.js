@@ -135,18 +135,12 @@ module.exports = app => {
     }
 
     async function joshmat(agent) {
-      let Jmt = await Joshmat.findOne(
-        {
-          question:
-            agent.parameters.joshmats ||
-            agent.parameters.joshmats1 ||
-            agent.parameters.joshmats2,
-        },
-        function(err, joshmat) {
-          console.log(joshmat);
-          console.log('Answer', joshmat.answer);
-        }
-      );
+      let Jmt = await Joshmat.findOne({
+        question:
+          agent.parameters.joshmats ||
+          agent.parameters.joshmats1 ||
+          agent.parameters.joshmats2,
+      });
 
       let responseText = `
        ${agent.parameters.joshmats || agent.parameters.joshmats1}.
