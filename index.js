@@ -31,6 +31,7 @@ require('./models/Coupons');
 require('./models/Joshmat');
 require('./models/BotFriends');
 require('./models/Jokes');
+require('./models/Test');
 
 app.use(bodyParser.json());
 

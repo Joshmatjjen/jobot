@@ -86,7 +86,7 @@ class Chatbot extends Component {
   }
 
   async df_event_query(event) {
-    console.log('Platform is = ', Platform.OS);
+    // console.log('Platform is = ', Platform.OS);
     const request = {
       queryInput: {
         event: {

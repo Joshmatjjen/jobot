@@ -32,7 +32,7 @@ class Message extends Component {
   render() {
     return (
       <div className="container">
-        <div className="content m-2">
+        <div className="content">
           <div className="row p-2">
             <div style={{padding: '5px'}}>
               {this.props.speaks === 'bot' && <img width="50" height="50" src={bot} />}

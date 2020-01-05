@@ -1,16 +1,18 @@
-const {WebhookClient} = require('dialogflow-fulfillment');
+const fs = require("fs");
+const {WebhookClient} = require("dialogflow-fulfillment");
 
-const {Payload} = require('dialogflow-fulfillment');
-const mongoose = require('mongoose');
-const Demand = mongoose.model('demand');
-const Joshmat = mongoose.model('joshmat');
-const Coupon = mongoose.model('coupon');
-const Registration = mongoose.model('registration');
-const BotFriend = mongoose.model('botFriend');
-const Joke = mongoose.model('joke');
+const {Payload} = require("dialogflow-fulfillment");
+const mongoose = require("mongoose");
+const Demand = mongoose.model("demand");
+const Joshmat = mongoose.model("joshmat");
+const Coupon = mongoose.model("coupon");
+const Registration = mongoose.model("registration");
+const BotFriend = mongoose.model("botFriend");
+const Joke = mongoose.model("joke");
+// const Test = mongoose.model("test");
 
 module.exports = app => {
-  app.post('/', async (req, res) => {
+  app.post("/", async (req, res) => {
     const agent = new WebhookClient({
       request: req,
       response: res,
@@ -18,19 +20,66 @@ module.exports = app => {
 
     async function parrot(agent) {
       agent.add(`Welcome to my Parrot fulfillment!`);
-      const joke = new Joke({
-        name: 'jokes',
-        type: 'top',
-        value:
-          'A child asked his father, "How were people born?" So his father said, "Adam and Eve made babies, then their babies became adults and made babies, and so on." The child then went to his mother, asked her the same question and she told him, "We were monkeys then we evolved to become like we are now." The child ran back to his father and said, "You lied to me!" His father replied, "No, your mom was talking about her side of the family."',
-        dateSent: Date.now(),
-      });
+      // const joke = new Joke({
+      //   name: 'jokes',
+      //   type: 'top',
+      //   value:
+      //     "I've got a friend who's fallen in love with two school bags, he's bisatchel.",
+      //   dateSent: Date.now(),
+      // });
+
+      // const jokes = [
+      //   {
+      //     name: 'jokes',
+      //     type: 'top',
+      //     value: 'It’s not who you know, it’s whom you know.',
+      //     dateSent: Date.now(),
+      //   },
+      //   {
+      //     name: 'jokes',
+      //     type: 'top',
+      //     value: 'I have a lot of jokes about unemployed people but none of them work.',
+      //     dateSent: Date.now(),
+      //   },
+      // ];
+
       try {
-        let reg = await joke.save();
+        let reg;
+        // let reg = await Joke.create(jokes);
+        let jokelist = [
+          "To err is human, to blame it on someone else shows management potential.",
+        ];
+
+        for (let i = 0; i < jokelist.length; i++) {
+          reg = await Joke.create({
+            id: i,
+            name: "jokes",
+            type: "top",
+            value: jokelist[i],
+            dateSent: Date.now(),
+          });
+        }
         console.log(reg);
       } catch (err) {
         console.log(err);
       }
+      // await Joke.find(function(err, data) {
+      //   console.log(data);
+      //   fs.writeFile("testjokes.json", data, err => {
+      //     // throws an error, you could also catch it here
+      //     if (err) throw err;
+
+      //     // success case, the file was saved
+      //     console.log("data saved!");
+      //   });
+      // });
+
+      // try {
+      //   let reg = await joke.save();
+      //   console.log(reg);
+      // } catch (err) {
+      //   console.log(err);
+      // }
     }
 
     async function registration(agent) {
@@ -50,36 +99,46 @@ module.exports = app => {
     }
 
     async function joke(agent) {
-      // console.log(agent.parameters.alljokes);
-      // Get the count of all users
-      // Joke.count().exec(function(err, count) {
-      //   // Get a random entry
-      //   var random = Math.floor(Math.random() * count);
+      /** Method 1 */
+      var startDate = new Date();
+      const allJoke = await Joke.aggregate([{$sample: {size: 3}}]);
+      let randomJoke = allJoke[0];
+      // console.log("JOker", joka);
+      var t1 = new Date() - startDate;
+      console.log(t1);
 
-      //   // Again query all users but only fetch one offset by our random #
-      //   Joke.findOne()
-      //     .skip(random)
-      //     .exec(function(err, result) {
-      //       // Tada! random user
-      //       console.log(result);
-      //     });
+      /** Method 2 to get random jokes*/
+      // var startDate = new Date();
+      // var i = 10000;
+      // const number = await Joke.countDocuments();
+      // let random = Math.floor(Math.random() * number);
+      // let randomJoke2 = await Joke.find()
+      //   .limit(-1)
+      //   .skip(random);
+      // console.log(randomJoke2[0].value);
+      // var t2 = new Date() - startDate;
+      // console.log(t1, t2);
+      // console.log;
+      // let jokes = await Joke.find({
+      //   name: agent.parameters.alljokes,
       // });
-      let jokes = await Joke.find({
-        name: agent.parameters.alljokes,
-      });
-      let randomJoke = await jokes[Math.floor(Math.random() * jokes.length)];
-      let responseText = `
-        You want to learn about ${agent.parameters.alljokes}.
-      `;
-      let badResponseText = ` 😢 Sorry i dont have an answer to your question, Please ask another one. `;
+      // let randomJoke = await jokes[Math.floor(Math.random() * jokes.length)];
+      // console.log(randomJoke);
+      let responseText = `😢 Sorry, Unable to find any joke right now, Please try again later`;
+      let badResponseText = ` 😢 Sorry, i dont have an answer to your question, Please ask another one. `;
 
+      // if (randomJoke2[0] !== null) {
       if (randomJoke !== null) {
+        // responseText = `${randomJoke2[0].value}`;
         responseText = `${randomJoke.value}`;
+        // console.log(responseText);
       }
-      if (!agent.parameters.alljokes) {
+      if (!agent.parameters.alljokes || !randomJoke) {
         responseText = badResponseText;
       }
+
       agent.add(responseText);
+      console.log("datafrom Agent: ", responseText);
     }
 
     async function botFriend(agent) {
@@ -93,18 +152,18 @@ module.exports = app => {
       try {
         let reg = await botFriends.save();
         await agent.add(
-          '😊Thanks for typing in your details soon you and Joshmat would be friends.'
+          "😊Thanks for typing in your details soon you and Joshmat would be friends."
         );
         const payload = {
-          text: 'Who whould you like to know about?',
+          text: "Who whould you like to know about?",
           quick_replies: [
             {
-              text: 'Josh',
-              payload: 'josh',
+              text: "Josh",
+              payload: "josh",
             },
             {
-              text: 'Bot',
-              payload: 'bot',
+              text: "Bot",
+              payload: "bot",
             },
           ],
         };
@@ -199,13 +258,13 @@ module.exports = app => {
       agent.add(`I no understand you?`);
     }
     let intentMap = new Map();
-    intentMap.set('learn joshmat', joshmat);
-    intentMap.set('parrot', parrot);
-    intentMap.set('jokes', joke);
-    intentMap.set('learn courses', learn);
-    intentMap.set('recommend courses - yes', registration);
-    intentMap.set('about joshmat - yes', botFriend);
-    intentMap.set('Default Fallback Intent', fallback);
-    agent.handleRequest(intentMap);
+    await intentMap.set("learn joshmat", joshmat);
+    await intentMap.set("parrot", parrot);
+    await intentMap.set("jokes", joke);
+    await intentMap.set("learn courses", learn);
+    await intentMap.set("recommend courses - yes", registration);
+    await intentMap.set("about joshmat - yes", botFriend);
+    await intentMap.set("Default Fallback Intent", fallback);
+    await agent.handleRequest(intentMap);
   });
 };
