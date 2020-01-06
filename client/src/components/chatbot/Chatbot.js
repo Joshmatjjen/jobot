@@ -1,19 +1,19 @@
-import React, {Component} from 'react';
-import axios from 'axios/index';
-import {withRouter} from 'react-router-dom';
-import Cookies from 'universal-cookie';
-import {v4 as uuid} from 'uuid';
-import Linkify from 'react-linkify';
+import React, {Component} from "react";
+import axios from "axios/index";
+import {withRouter} from "react-router-dom";
+import Cookies from "universal-cookie";
+import {v4 as uuid} from "uuid";
+import Linkify from "react-linkify";
 
-import Message from './Message';
-import Card from './Card';
-import QuickReplies from './QuickReplies';
+import Message from "./Message";
+import Card from "./Card";
+import QuickReplies from "./QuickReplies";
 
 // import bot from '../../assets/bot.png';
-import bot from '../../assets/parrot.png';
-import chat from '../../assets/chat.png';
-import './Chatbot.style.css';
-import Platform from 'react-platform-js';
+import bot from "../../assets/parrot.png";
+import chat from "../../assets/chat.png";
+import "./Chatbot.style.css";
+import Platform from "react-platform-js";
 
 const cookies = new Cookies();
 class Chatbot extends Component {
@@ -35,12 +35,12 @@ class Chatbot extends Component {
       welcomeSent: false,
       clientToken: false,
       regenerateToken: 0,
-      inputValue: '',
-      sentText: 'Waiting for bot...',
-      online_status: '#ff0000',
+      inputValue: "",
+      sentText: "Waiting for bot...",
+      online_status: "#ff0000",
     };
-    if (cookies.get('userID') === undefined) {
-      cookies.set('userID', uuid(), {path: '/'});
+    if (cookies.get("userID") === undefined) {
+      cookies.set("userID", uuid(), {path: "/"});
     }
   }
 
@@ -65,7 +65,7 @@ class Chatbot extends Component {
 
   async df_text_query(text) {
     let says = {
-      speaks: 'me',
+      speaks: "me",
       msg: {
         text: {
           text: text,
@@ -77,11 +77,11 @@ class Chatbot extends Component {
       queryInput: {
         text: {
           text: text,
-          languageCode: 'en-US',
+          languageCode: "en-US",
         },
       },
     };
-    this.setState({sentText: 'Sending Message...'});
+    this.setState({sentText: "Sending Message..."});
     await this.df_client_call(request);
   }
 
@@ -91,7 +91,7 @@ class Chatbot extends Component {
       queryInput: {
         event: {
           name: event,
-          languageCode: 'en-US',
+          languageCode: "en-US",
         },
       },
     };
@@ -102,37 +102,37 @@ class Chatbot extends Component {
   async df_client_call(request) {
     try {
       if (this.state.clientToken === false) {
-        const res = await axios.get('/api/get_client_token');
+        const res = await axios.get("/api/get_client_token");
         this.setState({clientToken: res.data.token});
       }
 
       var config = {
         headers: {
-          Authorization: 'Bearer ' + this.state.clientToken,
-          'Content-Type': 'application/json; charset=utf-8',
+          Authorization: "Bearer " + this.state.clientToken,
+          "Content-Type": "application/json; charset=utf-8",
         },
       };
       const res = await axios.post(
-        'https://dialogflow.googleapis.com/v2/projects/' +
+        "https://dialogflow.googleapis.com/v2/projects/" +
           process.env.REACT_APP_GOOGLE_PROJECT_ID +
-          '/agent/sessions/' +
+          "/agent/sessions/" +
           process.env.REACT_APP_DF_SESSION_ID +
-          cookies.get('userID') +
-          ':detectIntent',
+          cookies.get("userID") +
+          ":detectIntent",
         request,
         config
       );
       console.log(process.env.REACT_APP_GOOGLE_PROJECT_ID);
 
       let says = {};
-      this.setState({sentText: 'Parrot Typing.....', online_status: '#00fa00'});
+      this.setState({sentText: "Parrot Typing.....", online_status: "#00fa00"});
       await this.resolveAfterXSeconds(3);
-      this.setState({sentText: ''});
+      this.setState({sentText: ""});
       console.log(this.state.sentText);
       if (res.data.queryResult.fulfillmentMessages) {
         for (let msg of res.data.queryResult.fulfillmentMessages) {
           says = {
-            speaks: 'bot',
+            speaks: "bot",
             msg: msg,
           };
           this.setState({
@@ -140,7 +140,7 @@ class Chatbot extends Component {
           });
           await this.resolveAfterXSeconds(2);
         }
-        this.setState({sentText: ''});
+        this.setState({sentText: ""});
       }
 
       this.setState({regenerateToken: 0});
@@ -151,9 +151,9 @@ class Chatbot extends Component {
           this.df_client_call(request);
         }
       } else {
-        this.setState({online_status: '#ff0000'});
+        this.setState({online_status: "#ff0000"});
         let says = {
-          speaks: 'bot',
+          speaks: "bot",
           msg: {
             text: {
               text: "I'm having trobles. I need to terminate. will be back later",
@@ -183,36 +183,36 @@ class Chatbot extends Component {
       this.setState({showBot: true});
     }
 
-    if (window.location.pathname === '/') {
-      await this.df_event_query('Welcome');
-      this.setState({sentText: 'Parrot Typing.....'});
-      this.df_event_query('WelcomeName');
-    } else if (window.location.pathname === '/shop') {
+    if (window.location.pathname === "/") {
+      await this.df_event_query("Welcome");
+      this.setState({sentText: "Parrot Typing....."});
+      this.df_event_query("WelcomeName");
+    } else if (window.location.pathname === "/shop") {
       await this.resolveAfterXSeconds(1);
-      this.df_event_query('SHOW_RECOMMENDATIONS');
+      this.df_event_query("SHOW_RECOMMENDATIONS");
       this.setState({shopWelcomeSent: true, showBot: true});
-    } else if (window.location.pathname === '/about') {
+    } else if (window.location.pathname === "/about") {
       await this.resolveAfterXSeconds(1);
-      this.df_event_query('ABOUT_JOSHMAT');
+      this.df_event_query("ABOUT_JOSHMAT");
       this.setState({showBot: true});
     }
     this.props.history.listen(async () => {
-      if (this.props.history.location.pathname === '/shop') {
-        this.df_event_query('SHOW_RECOMMENDATIONS');
+      if (this.props.history.location.pathname === "/shop") {
+        this.df_event_query("SHOW_RECOMMENDATIONS");
         this.setState({shopWelcomeSent: true, showBot: true});
       }
     });
   }
 
   async componentDidUpdate() {
-    this.messagesEnds.scrollIntoView({behaviour: 'smooth'});
+    this.messagesEnds.scrollIntoView({behaviour: "smooth"});
     if (this.talkInput) {
       this.talkInput.focus();
     }
   }
 
   async show() {
-    this.setState({sentText: 'Waiting for bot...'});
+    this.setState({sentText: "Waiting for bot..."});
     await this.setState({showBot: true});
     if (this.state.showBot === true) {
       this.componentDidMount();
@@ -225,20 +225,23 @@ class Chatbot extends Component {
     this.setState({
       showBot: false,
       shopWelcomeSent: false,
-      online_status: '#ff0000',
+      online_status: "#ff0000",
       messages: [],
     });
   }
 
   async _handleQuickReplyPayload(payload, text) {
     switch (payload) {
-      case 'recommended_yes':
-        this.df_event_query('SHOW_RECOMMENDATIONS');
+      case "recommended_yes":
+        this.df_event_query("SHOW_RECOMMENDATIONS");
+        break;
+      case "yes_more_jokes":
+        this.df_event_query("BESTJOKE");
         break;
       default:
         await this.df_text_query(text);
         await this.resolveAfterXSeconds(5);
-        console.log('done waiting');
+        console.log("done waiting");
         break;
     }
   }
@@ -253,7 +256,7 @@ class Chatbot extends Component {
         <Message
           key={i}
           speaks={message.speaks}
-          imgs={message.msg.text.text === 'male' ? true : false}
+          imgs={message.msg.text.text === "male" ? true : false}
           text={message.msg.text.text}
         />
       );
@@ -261,16 +264,16 @@ class Chatbot extends Component {
       return (
         <div key={i}>
           <div className="card-box">
-            <div style={{overflow: 'hidden'}}>
+            <div style={{overflow: "hidden"}}>
               <div className="col s2">
                 <img
-                  style={{float: 'left', clear: 'both'}}
+                  style={{float: "left", clear: "both"}}
                   src={bot}
                   width="50px"
                   height="50px"
                 />
               </div>
-              <div style={{overflowX: 'scroll'}}>
+              <div style={{overflowX: "scroll"}}>
                 <div
                   style={{
                     height: 240,
@@ -308,22 +311,22 @@ class Chatbot extends Component {
   }
 
   _handleInputKeyPress(e) {
-    if (e.key === 'Enter') {
-      if (e.target.value === '') {
-        console.log('Empty message');
+    if (e.key === "Enter") {
+      if (e.target.value === "") {
+        console.log("Empty message");
       } else {
         this.df_text_query(e.target.value);
-        this.setState({inputValue: ''});
+        this.setState({inputValue: ""});
       }
     }
   }
 
   _handleSendBtn() {
     this.talkInput = this.state.inputValue;
-    if (this.state.inputValue === '') {
-      console.log('Empty Message');
+    if (this.state.inputValue === "") {
+      console.log("Empty Message");
     } else {
-      this.setState({inputValue: ''});
+      this.setState({inputValue: ""});
       this.df_text_query(this.talkInput);
     }
   }
@@ -342,7 +345,7 @@ class Chatbot extends Component {
               <p>{this.state.sentText}</p>
             </div>
             <div className="nav-close">
-              <a style={{fontSize: '25px'}} onClick={this.hide}>
+              <a style={{fontSize: "25px"}} onClick={this.hide}>
                 &#10005;
               </a>
             </div>
@@ -357,7 +360,7 @@ class Chatbot extends Component {
               ref={el => {
                 this.messagesEnds = el;
               }}
-              style={{float: 'left', clear: 'both'}}
+              style={{float: "left", clear: "both"}}
             ></div>
           </div>
           <div className="input-msg">
@@ -390,7 +393,7 @@ class Chatbot extends Component {
           ref={el => {
             this.messagesEnds = el;
           }}
-          style={{position: 'fixed', right: 20, bottom: 100, clear: 'both'}}
+          style={{position: "fixed", right: 20, bottom: 100, clear: "both"}}
         />
       );
     }

@@ -28,8 +28,11 @@
     "http-proxy-middleware": "^0.20.0",
     "mongoose": "^5.8.1",
     "mongoose-simple-random": "^0.4.1",
+    "mongoose-unique-array": "^0.3.3",
+    "mongoose-unique-validator": "^2.0.3",
     "react-linkify": "^1.0.0-alpha",
-    "react-platform-js": "0.0.1"
+    "react-platform-js": "0.0.1",
+    "underscore": "^1.9.1"
   },
   "devDependencies": {
     "concurrently": "^5.0.0",
