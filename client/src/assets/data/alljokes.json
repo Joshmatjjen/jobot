@@ -1,250 +1,1236 @@
-[{
-    "_id": "5e0992b3c008c3479e911f66",
-    "name": "jokes",
-    "type": "top",
-    "value": "Boy complains to his father: You told me to put a potato in my swimming trunks! You said it would impress the girls at the pool! But you forgot to mention one thing! - Father: Really, what? - Boy: That the potato should go in the front."
-  },
-  {
-    "_id": "5e09c23adf4b4b77e0459b6d",
-    "name": "jokes",
-    "type": "top",
-    "value": "One company owner asks another: “Tell me, Bill, how come your employees are always on time in the mornings?”"
-  },
-  {
-    "_id": "5e09c27245cf62787c108955",
-    "name": "jokes",
-    "type": "top",
-    "value": "A wife is like a hand grenade. Take off the ring and say good bye to your house"
-  },
-  {
-    "_id": "5e0a13664778b46014bbd4e2",
-    "name": "jokes",
-    "type": "top",
-    "value": "Wait for me honey, I’m just finishing my make-up. -You don’t need make-up, Jane. -Oh, Richard…. really? That is so sweet of you! -You need plastic surgery."
-  },
-  {
-    "_id": "5e0a13e0d942346084546a23",
-    "name": "jokes",
-    "type": "top",
-    "value": "“Daddy, what is an alcoholic?” - “Do you see those 4 trees, son? An alcoholic would see 8 trees.” - “Um, Dad – there are only 2 trees.”"
-  },
-  {
-    "_id": "5e0a142ded388c6153b27c84",
-    "name": "jokes",
-    "type": "top",
-    "value": "Doctor: Hello, did you come to see me with an eye problem? Patient: Wow, yes, how can you tell? Doctor: Because you came in through the window instead of the door.“"
-  },
-  {
-    "_id": "5e0a149878a73062590bc858",
-    "name": "jokes",
-    "type": "top",
-    "value": "I was sitting in a bar one day and two really large women came in, talking in an interesting accent. So I said, “Cool accent, are you two ladies from Ireland?” One of them snarled at me, “It’s Wales, dumbo!” So I corrected myself, “Oh, right, so are you two whales from Ireland?” That’s about as far as I remember."
-  },
-  {
-    "_id": "5e0a153a8787c663396f883c",
-    "name": "jokes",
-    "type": "top",
-    "value": "A woman comes home late in the night and goes quietly in the bedroom. To her surprise, she sees male and female feet peeking out from under the blanket. Shocked and raging, she gets her baseball bat and beats and beats until all movement stops. After that she goes into the living room and sees her husband laying on the sofa. He turns to her half asleep: 'Oh, you're home, darling. I'm afraid we have to sleep here tonight, my parents came for a surprise visit.'"
-  },
-  {
-    "_id": "5e0a158a071e1f63c753c9a9",
-    "name": "jokes",
-    "type": "top",
-    "value": "A naked women robbed a bank. Nobody could remember her face."
-  },
-  {
-    "_id": "5e0a163b180e8e644d28be60",
-    "name": "jokes",
-    "type": "top",
-    "value": "Doctor: “Well - Mrs. Smith, it would seem that you're pregnant.” -Mrs. Smith: “Sweet Jesus, that's wonderful, I'm pregnant?!” -Doctor: “I only said that it seems so. Here's our weight loss brochure.”"
-  },
-  {
-    "_id": "5e0a165658fe8464ac963e37",
-    "name": "jokes",
-    "type": "top",
-    "value": "Guest at a restaurant: “I refuse to eat this roast beef. Please call the manager! “ Waiter: “That’s no use. He won’t eat it either.”"
-  },
-  {
-    "_id": "5e0a16c5a6456d65345ee278",
-    "name": "jokes",
-    "type": "top",
-    "value": "I’m selling my talking parrot. Why? Because yesterday, the bastard tried to sell me."
-  },
-  {
-    "_id": "5e0a16ed78b41f6573aa276a",
-    "name": "jokes",
-    "type": "top",
-    "value": "Doctor: “Can you describe the snake that bit you?” - Patient: “Yes. It looked like an angry rope. “"
-  },
-  {
-    "_id": "5e0a172d4fcc9f65be0e8872",
-    "name": "jokes",
-    "type": "top",
-    "value": "Doctor says to his patient: 'You have cancer and Alzheimer.' - Patient: 'At least I don't have cancer.'"
-  },
-  {
-    "_id": "5e0f1437fc9d4f0017f841dd",
-    "name": "jokes",
-    "type": "top",
-    "value": "Teacher: 'Kids, what does the chicken give you?' -Student: 'Meat!' -Teacher: 'Very good! Now what does the pig give you?' -Student: 'Bacon!' -Teacher: 'Great! And what does the fat cow give you?' -Student: 'Homework!'"
-  },
-  {
-    "_id": "5e0f163ddcda9a6f6e3cb970",
-    "name": "jokes",
-    "type": "top",
-    "value": "A child asked his father, 'How were people born?' So his father said, 'Adam and Eve made babies, then their babies became adults and made babies, and so on.' The child then went to his mother, asked her the same question and she told him, 'We were monkeys then we evolved to become like we are now.' The child ran back to his father and said, 'You lied to me!' His father replied, 'No, your mom was talking about her side of the family.'"
-  },
-  {
-    "_id": "5e0f1676ff6fc370d475f480",
-    "name": "jokes",
-    "type": "top",
-    "value": "My friend thinks he is smart. He told me an onion is the only food that makes you cry, so I threw a coconut at his face."
-  },
-  {
-    "_id": "5e0f16c52da797716098a1f2",
-    "name": "jokes",
-    "type": "top",
-    "value": "What happens to a frog's car when it breaks down? It gets toad away."
-  },
-  {
-    "_id": "5e0f171ec9c1ac71d2db6672",
-    "name": "jokes",
-    "type": "top",
-    "value": "Q: Is Google male or female?  -A: Female, because it doesn't let you finish a sentence before making a suggestion."
-  },
-  {
-    "_id": "5e0f17b73425f372f7ed2b3a",
-    "name": "jokes",
-    "type": "top",
-    "value": "--Teacher: 'If I gave you 2 cats and another 2 cats and another 2, how many would you have?' --Johnny: 'Seven.' --Teacher: 'No, listen carefully... If I gave you two cats, and another two cats and another two, how many would you have?' --Johnny: 'Seven.' --Teacher: 'Let me put it to you differently. If I gave you two apples, and another two apples and another two, how many would you have?' --Johnny: 'Six.' --Teacher: 'Good. Now if I gave you two cats, and another two cats and another two, how many would you have?' --Johnny: 'Seven!' --Teacher: 'Johnny, where in the heck do you get seven from?!' --Johnny: 'Because I've already got a freaking cat!'"
-  },
-  {
-    "_id": "5e0f184c9975e674af4c46d8",
-    "name": "jokes",
-    "type": "top",
-    "value": "Kid 1: 'Hey, I bet you're still a virgin.' -Kid 2: 'Yeah, I was a virgin until last night .' -Kid 1: 'As if.' -Kid 2: 'Yeah, just ask your sister.' -Kid 1: 'I don't have a sister.' -Kid 2: 'You will in about nine months.'"
-  },
-  {
-    "_id": "5e0f19183b5c597602e1bfea",
-    "name": "jokes",
-    "type": "top",
-    "value": "Mr. and Mrs. Brown had two sons. One was 'name'd Mind Your Own Business & the other was 'name'd Trouble. One day the two boys decided to play hide and seek. Trouble hid while Mind Your Own Business counted to one hundred. Mind Your Own Business began looking for his brother behind garbage cans and bushes. Then he started looking in and under cars until a police man approached him and asked, 'What are you doing?' 'Playing a game,' the boy replied. 'What is your 'name'?' the officer questioned. 'Mind Your Own Business.' Furious the policeman inquired, 'Are you looking for trouble?!' The boy replied, 'Why, yes.'"
-  },
-  {
-    "_id": "5e0f1945736e67765a5c003f",
-    "name": "jokes",
-    "type": "top",
-    "value": "-Q: What did the duck say when he bought lipstick? -A: 'Put it on my bill.'"
-  },
-  {
-    "_id": "5e0f197f7f40cb76b7d052fa",
-    "name": "jokes",
-    "type": "top",
-    "value": "A blonde and a redhead have a ranch. They have just lost their bull. The women need to buy another, but only have $500. The redhead tells the blonde, 'I will go to the market and see if I can find one for under that amount. If I can, I will send you a telegram.' She goes to the market and finds one for $499. Having only one dollar left, she goes to the telegraph office and finds out that it costs one dollar per word. She is stumped on how to tell the blonde to bring the truck and trailer. Finally, she tells the telegraph operator to send the word 'comfortable.' Skeptical, the operator asks, 'How will she know to come with the trailer from just that word?' The redhead replies, 'She's a blonde so she reads slow: 'Come for ta bull.''"
-  },
-  {
-    "_id": "5e0f19a41a8ccc770670bbf0",
-    "name": "jokes",
-    "type": "top",
-    "value": "A teacher asked her students to use the word 'beans' in a sentence. 'My father grows beans,' said one girl. 'My mother cooks beans,' said a boy. A third student spoke up, 'We are all human beans.'"
-  },
-  {
-    "_id": "5e0f19c3aa283c77468944f6",
-    "name": "jokes",
-    "type": "top",
-    "value": "Reaching the end of a job interview, the Human Resources Officer asks a young engineer fresh out of the Massachusetts Institute of Technology, 'And what starting salary are you looking for?' The engineer replies, 'In the region of $125,000 a year, depending on the benefits package. The interviewer inquires, Well, what would you say to a package of five weeks vacation, 14 paid holidays, full medical and dental, company matching retirement fund to 50% of salary, and a company car leased every two years, say, a red Corvette?' The engineer sits up straight and says, Wow! Are you kidding?' The interviewer replies, Yeah, but you started it.'"
-  },
-  {
-    "_id": "5e0f1d6f590f46068df75d37",
-    "name": "jokes",
-    "type": "top",
-    "value": "A young blonde woman is distraught because she fears her husband is having an affair, so she goes to a gun shop and buys a handgun. The next day she comes home to find her husband in bed with a beautiful redhead. She grabs the gun and holds it to her own head. The husband jumps out of bed, begging and pleading with her not to shoot herself. Hysterically the blonde responds to the husband, 'Shut up...you're next!'"
-  },
-  {
-    "_id": "5e0f1d9a39c2cc07185f2edc",
-    "name": "jokes",
-    "type": "top",
-    "value": "I said to the Gym instructor 'Can you teach me to do the splits?' He said, 'How flexible are you?' I said, 'I can't make Tuesdays'"
-  },
-  {
-    "_id": "5e0f1db479de700768bc752d",
-    "name": "jokes",
-    "type": "top",
-    "value": "Police arrested two kids yesterday, one was drinking battery acid, the other was eating fireworks. They charged one - and let the other one off."
-  },
-  {
-    "_id": "5e0f1e1991c20507df9b4d1f",
-    "name": "jokes",
-    "type": "top",
-    "value": "I went to the doctors the other day and I said, 'Have you got anything for wind?' So he gave me a kite."
-  },
-  {
-    "_id": "5e0f1e9c89b284092a17792f",
-    "name": "jokes",
-    "type": "top",
-    "value": "There's two fish in a tank, and one says to the other 'How do you drive this thing?'"
-  },
-  {
-    "_id": "5e0f1ecaff26a609dfcc2e4c",
-    "name": "jokes",
-    "type": "top",
-    "value": "Slept like a log last night........ Woke up in the fireplace."
-  },
-  {
-    "_id": "5e0f1eec5316d70a2ac66e23",
-    "name": "jokes",
-    "type": "top",
-    "value": "A sandwich walks into a bar. The barman says 'Sorry we don't serve food in here'"
-  },
-  {
-    "_id": "5e0f1f445a9c150ab523d638",
-    "name": "jokes",
-    "type": "top",
-    "value": "I was in Tesco's and I saw this man and woman wrapped in a barcode. I said, 'Are you two an item?' "
-  },
-  {
-    "_id": "5e0f1f72f69fc00af2758ba0",
-    "name": "jokes",
-    "type": "top",
-    "value": "So I went to the Chinese restaurant and this duck came up to me with a red rose and says 'Your eyes sparkle like diamonds'. I said, 'Waiter, I asked for a-ROMATIC duck'."
-  },
-  {
-    "_id": "5e0f1fe00c6b710b8a783e81",
-    "name": "jokes",
-    "type": "top",
-    "value": "My phone will ring at 2 in the morning, and my wife'll look at me and go, 'Who's that calling at this time?' 'I don't know! If I knew that we wouldn't need the bloody phone!'"
-  },
-  {
-    "_id": "5e0f200e323a040c14aba742",
-    "name": "jokes",
-    "type": "top",
-    "value": "I've got a friend who's fallen in love with two school bags, he's bisatchel."
-  },
-  {
-    "_id": "5e0f28628bbdeb1320998551",
-    "name": "jokes",
-    "type": "top",
-    "value": "Nothing is foolpr"
-  },
-  {
-    "_id": "5e0f28628bbdeb1320998552",
-    "name": "jokes",
-    "type": "top",
-    "value": "I have a lot of jokes about unem"
-  },
-  {
-    "_id": "5e0f29b1f2ca4719f5c7566e",
-    "name": "jokes",
-    "type": "top",
-    "value": "It’s not who you know, it’s whom you know."
-  },
-  {
-    "name": "jokes",
-    "type": "top",
-    "value": "It’s not who you know, it’s whom you know."
-  }, {
-    "name": "jokes",
-    "type": "top",
-    "value": "I have a lot of jokes about unemployed people but none of them work."
-  }
-]
+"Boy complains to his father: You told me to put a potato in my swimming trunks! You said it would impress the girls at the pool! But you forgot to mention one thing! - Father: Really, what? - Boy: That the potato should go in the front.",
+"One company owner asks another:  “Tell me, Bill, how come your employees are always on time in the mornings?”",
+"A wife is like a hand grenade. Take off the ring and say good bye to your house",
+"Wait for me honey, I’m just finishing my make-up. -You don’t need make-up, Jane. -Oh, Richard…. really? That is so sweet of you! -You need plastic surgery.",
+"“Daddy, what is an alcoholic?” - “Do you see those 4 trees, son? An alcoholic would see 8 trees.” - “Um, Dad – there are only 2 trees.”",
+"Doctor: Hello, did you come to see me with an eye problem? Patient: Wow, yes, how can you tell? Doctor: Because you came in through the window instead of the door.“",
+"I was sitting in a bar one day and two really large women came in, talking in an interesting accent. So I said, “Cool accent, are you two ladies from Ireland?” One of them snarled at me, “It’s Wales, dumbo!” So I corrected myself, “Oh, right, so are you two whales from Ireland?” That’s about as far as I remember.",
+"A woman comes home late in the night and goes quietly in the bedroom. To her surprise, she sees male and female feet peeking out from under the blanket. Shocked and raging, she gets her baseball bat and beats and beats until all movement stops. After that she goes into the living room and sees her husband laying on the sofa. He turns to her half asleep: ¨Oh, you´re home, darling. I¨m afraid we have to sleep here tonight, my parents came for a surprise visit. ¨",
+"A naked women robbed a bank. Nobody could remember her face.",
+"Doctor: “Well - Mrs. Smith, it would seem that you´re pregnant.” - Mrs.Smith: “Sweet Jesus, that´s wonderful, I¨m pregnant ? !”-Doctor : “I only said that it seems so.Here´s our weight loss brochure.”",
+"Guest at a restaurant: “I refuse to eat this roast beef. Please call the manager! “ Waiter: “That’s no use. He won’t eat it either.”",
+"I’m selling my talking parrot. Why? Because yesterday, the bastard tried to sell me.",
+"Doctor: “Can you describe the snake that bit you?” - Patient: “Yes. It looked like an angry rope. “",
+"Doctor says to his patient: ¨You have cancer and Alzheimer. ¨- Patient: ¨At least I don t h ve cancer.¨",
+"Teacher: ¨Kids, what does the chicken give you ?¨ -Student: ¨Meat!¨ -Teacher: ¨Very good!Now what does the pig give you ?¨ -Student: ¨Bacon! ¨-Teacher: ¨Great!And what does the fat cow give you ?¨ -Student: ¨Homework!¨",
+"A child asked his father, ¨How were people born ?¨ So his father said, ¨Adam and Eve made babies, then their babies became adults and made babies, and so on. ¨The child then went to his mother, asked her the same question and she told him, ¨We were monkeys then we evolved to become like we are now. ¨The child ran back to his father and said, ¨You lied to me!¨His father replied, ¨No, your mom was talking about her side of the family. ¨",
+"My friend thinks he is smart. He told me an onion is the only food that makes you cry, so I threw a coconut at his face.",
+"What happens to a frog´s car when it breaks down ? It gets toad away. ",
+"~Q: Is Google male or female?  -A: Female, because it doesn´t let you finish a sentence before making a suggestion.",
+"--Teacher: ¨If I gave you 2 cats and another 2 cats and another 2, how many would you have ? ¨--Johnny: ¨Seven.¨--Teacher : ¨No, listen carefully... If I gave you two cats, and another two cats and another two, how many would you have?¨--Johnny: ¨Seven.¨--Teacher: ¨Let me put it to you differently. If I gave you two apples, and another two apples and another two, how many would you have?¨--Johnny: ¨Six. ¨--Teacher: ¨Good.Now if I gave you two cats, and another two cats and another two, how many would you have ? ¨--Johnny: ¨Seven!¨--Teacher : ¨Johnny, where in the heck do you get seven from?!¨--Johnny: ¨Because I´ve already got a freaking cat!¨",
+"Kid 1: ¨Hey, I bet you´re still a virgin.¨-Kid 2: ¨Yeah, I was a virgin until last night .¨-Kid 1: ¨As if.¨-Kid 2: ¨Yeah, just ask your sister.¨-Kid 1: ¨I don´t have a sister.¨-Kid 2: ¨You will in about nine months.¨",
+"Mr. and Mrs. Brown had two sons. One was ¨name¨d Mind Your Own Business & the other was ¨name¨d Trouble. One day the two boys decided to play hide and seek. Trouble hid while Mind Your Own Business counted to one hundred. Mind Your Own Business began looking for his brother behind garbage cans and bushes. Then he started looking in and under cars until a police man approached him and asked, ¨What are you doing ? ¨¨Playing a game, ¨the boy replied. ¨What is your ¨name¨? ¨the officer questioned. ¨Mind Your Own Business. ¨Furious the policeman inquired, ¨Are you looking for trouble ? !¨The boy replied, ¨Why, yes. ¨",
+"~Q: What did the duck say when he bought lipstick? -A: ¨Put it on my bill. ¨",
+"A blonde and a redhead have a ranch. They have just lost their bull. The women need to buy another, but only have $500. The redhead tells the blonde, ¨I will go to the market and see if I can find one for under that amount.If I can, I will send you a telegram. ¨She goes to the market and finds one for $499. Having only one dollar left, she goes to the telegraph office and finds out that it costs one dollar per word. She is stumped on how to tell the blonde to bring the truck and trailer. Finally, she tells the telegraph operator to send the word ¨comfortable. ¨Skeptical, the operator asks, ¨How will she know to come with the trailer from just that word ? ¨The redhead replies, ¨She´s a blonde so she reads slow: ¨Come for ta bull. ¨¨",
+"A teacher asked her students to use the word ¨beans ¨in a sentence. ¨My father grows beans, ¨said one girl. ¨My mother cooks beans, ¨said a boy. A third student spoke up, ¨We are all human beans. ¨",
+"Reaching the end of a job interview, the Human Resources Officer asks a young engineer fresh out of the Massachusetts Institute of Technology, ¨And what starting salary are you looking for ? ¨The engineer replies, ¨In the region of $125, 000 a year, depending on the benefits package. ¨The interviewer inquires, ¨Well, what would you say to a package of five weeks vacation, 14 paid holidays, full medical and dental, company matching retirement fund to 50 % of salary, and a company car leased every two years, say, a red Corvette ? ¨The engineer sits up straight and says, ¨Wow!Are you kidding ? ¨The interviewer replies, ¨Yeah, but you started it. ¨",
+"A young blonde woman is distraught because she fears her husband is having an affair, so she goes to a gun shop and buys a handgun. The next day she comes home to find her husband in bed with a beautiful redhead. She grabs the gun and holds it to her own head. The husband jumps out of bed, begging and pleading with her not to shoot herself. Hysterically the blonde responds to the husband, ¨Shut up...you´re next!¨",
+"I said to the Gym instructor ¨Can you teach me to do the splits ? ¨He said, ¨How flexible are you ? ¨I said, ¨I can´t make Tuesdays¨",
+"Police arrested two kids yesterday, one was drinking battery acid, the other was eating fireworks. They charged one - and let the other one off.",
+"I went to the doctors the other day and I said, ¨Have you got anything for wind ? ¨So he gave me a kite.",
+"There´s two fish in a tank, and one says to the other ¨How do you drive this thing ? ¨",
+"Slept like a log last night........ Woke up in the fireplace.",
+"A sandwich walks into a bar. The barman says ¨Sorry we don´t serve food in here¨",
+"I was in Tesco´s and I saw this man and woman wrapped in a barcode. I said, ¨Are you two an item ? ¨",
+"So I went to the Chinese restaurant and this duck came up to me with a red rose and says ¨Your eyes sparkle like diamonds ¨. I said, ¨Waiter, I asked for a - ROMATIC duck ¨",
+"My phone will ring at 2 in the morning, and my wife´ll look at me and go, ¨Who´s that calling at this time?¨¨I don´t know!If I knew that we wouldn´t need the bloody phone!¨",
+"I´ve got a friend who´s fallen in love with two school bags, he´s bisatchel. ",
+"It’s not who you know, it’s whom you know.",
+"I have a lot of jokes about unemployed people but none of them work.",
+"A boy asks his father, ¨Dad, are bugs good to eat ?¨ ¨That´s disgusting. Don´t talk about things like that over dinner,¨the dad replies. After dinner the father asks, ¨Now, son, what did you want to ask me?¨¨Oh, nothing, ¨the boy says. ¨There was a bug in your soup, but now it’ s gone. ¨",
+"~Q: Why was six scared of seven? ~A: Because seven ate nine.",
+"~Q: Can a kangaroo jump higher than the Empire State Building? ~A: Of course. The Empire State Building can´t jump. ",
+"~Q: Why did the witche´s team lose the baseball game ? ~A: Their bats flew away.",
+"A bus full of ugly people had a head on collision with a truck. When they died, God granted all of them one wish. The first person said, ¨I want to be gorgeous. ¨God snapped his fingers and it happened. The second person said the same thing and God did the same thing. This want on and on throughout the group. God noticed the last man in line was laughing hysterically. By the time God got to the last ten people, the last man was laughing and rolling on the ground. When the man¨s turn came, he laughed and said, ¨I wish they were all ugly again. ¨",
+"~Q: Why couldn´t the leopard play hide and seek ? ~A : Because he was always spotted. ",
+"In a Catholic school cafeteria, a nun places a note in front of a pile of apples, ¨Only take one.God is watching. ¨Further down the line is a pile of cookies. A little boy makes his own note, ¨Take all you want.God is watching the apples. ¨",
+"~Q: Why couldn´t the blonde add 10 + 5 on a calculator ? ~A : She couldn´t find the¨10¨button.",
+"Instead of ¨the John, ¨I call my toilet ¨the Jim. ¨That way it sounds better when I say I go to the Jim first thing every morning.",
+"~Q: What starts with E, ends with E, and has only 1 letter in it? ~A: Envelope.",
+"Q: Did you hear about the kidnapping at school? ~A: It´s okay.He woke up. ",
+"A husband and wife were driving through Louisiana. As they approached Natchitoches, they started arguing about the pronunciation of the town. They argued back and forth, then they stopped for lunch. At the counter, the husband asked the blonde waitress, ¨Before we order, could you please settle an argument for us ? Would you please pronounce where we are very slowly ? ¨She leaned over the counter and said, ¨Burrr - gerrr Kiiing. ¨",
+"~Math Teacher: ¨If I have 5 bottles in one hand and 6 in the other hand, what do I have ? ¨~Student: ¨A drinking problem. ¨",
+"~Q: Why did the can crusher quit his job? ~A: Because it was soda pressing.",
+"Late one night a burglar broke into a house and while he was sneaking around he heard a voice say, ¨ Jesús is watching you. ¨He looked around and saw nothing. He kept on creeping and again heard, ¨ Jesús is watching you. ¨In a dark corner, he saw a cage with a parrot inside. The burglar asked the parrot, ¨ Was it you who said Jesús is watching me¨The parrot replied, ¨ Yes. ¨Relieved, the burglar asked, ¨ What is your ¨name¨? ¨The parrot said, ¨ Clarence. ¨The burglar said, ¨ That´s a stupid ¨name¨for a parrot. What idiot ¨name¨d you Clarence?¨The parrot answered, ¨The same idiot that ¨name¨d the rottweiler Jesús.¨",
+"~Q: Why did Adele cross the road? ~A: To sing, ¨ Hello from the other side!¨",
+"My friend told me he had the body of a Greek god. I had to explain to him that Buddha is not Greek.",
+"How is Christmas like your job? You do all the work and the fat guy in the suit gets all the credit.",
+"A proud and confident genius makes a bet with an idiot. The genius says, ¨ Hey idiot, every question I ask you that you don´t know the answer, you have to give me $5. And if you ask me a question and I can´t answer yours I will give you $5, 000. ¨The idiot says, ¨ Okay. ¨The genius then asks, ¨ How many continents are there in the world ? ¨The idiot doesn´t know and hands over the $5.The idiot says, ¨Now me ask: what animal stands with two legs but sleeps with three?¨ The genius tries and searches very hard for the answer but gives up and hands over the $5000.The genius says, ¨Dang it, I lost. By the way, what was the answer to your question?¨ The idiot hands over $5. ",
+"~Teacher: ¨ Which book has helped you the most in your life ? ¨~Student: ¨ My father ¨s check book!¨",
+"Three dead men go to hell at the same time. There is a white man, a Chinese man, and a Mexican man. Satan tells them that they can only leave hell if he can´t do what they ask.The white man asks for the fastest sports car in the world;he goes to into hell.The Chinese man asks for the most advanced computer in the world;he goes into to hell.The Mexican man gets a glass soda bottle, farts into it, closes the lid, pokes many holes in the lid, and asks Satan which hole the fart came from.After pointing to every hole on the lid, the Mexican turns around, points at his butt hole, and says, ¨Nope, this one.¨ ",
+"A mom texts, ¨ Hi!Son, what does IDK, LY, & TTYL mean ? ¨He texts back, ¨ I Don´t Know, Love You, & Talk To You Later.¨ The mom texts him, ¨It´s ok, don´t worry about it.I´ll ask your sister, love you too.¨ ",
+"I was wondering why the ball kept getting bigger and bigger, and then it hit me.",
+"~Q: Can February march? ~A: No, but April may.",
+"There was this guy at a bar, just looking at his drink. He stays like that for a half hour. Then a big trouble making truck driver steps next to him, takes the drink from the guy, & just drinks it all down. The poor man starts crying. The truck driver says, ¨ Come on man, I was just joking.Here, I´ll buy you another drink. I just can´t stand to see a man cry. ¨¨ No, it´s not that,¨the man replies, wiping his tears, ¨This day is the worst of my life. First, I oversleep & I go in late to my office. My outraged boss fires me. When I leave the building to go to my car, I find out it was stolen. The police say they can do nothing. I get a cab to go home, & when I get out, I remember I left my wallet. The cab driver just drives away. I go inside my house where I find my wife in bed with the gardener. I leave my home, come to this bar, & just when I was thinking about putting an end to my life, you show up & drink my poison.¨",
+"Don´t break anybody´s heart; they only have 1. Break their bones; they have 206.",
+"Two guys are walking through a game park & they come across a lion that has not eaten for days. The lion starts chasing the two men. They run as fast as they can and the one guy starts getting tired and decides to say a prayer, ¨ Please turn this lion into a Christian, Lord. ¨He looks to see if the lion is still chasing and he sees the lion on its knees. Happy to see his prayer answered, he turns around and heads towards the lion. As he comes closer to the lion, he hears the it saying a prayer: ¨ Thank you Lord for the food I am about to receive. ¨",
+"~Q: Why does Humpty Dumpty love autumn? ~A: Because Humpty Dumpty had a great fall.",
+"~A: I have the perfect son. ~B: Does he smoke? ~A: No, he doesn’t. ~B: Does he drink whiskey? ~A: No, he doesn’t. ~B: Does he ever come home late? ~A: No, he doesn’t. ~B: I guess you really do have the perfect son. How old is he? ~A: He will be six months old next Wednesday.",
+"~Q: What do you call a pig that does karate? ~A: A pork chop.",
+"A police officer attempts to stop a car for speeding and the guy gradually increases his speed until he´s topping 100 mph. The man eventually realizes he can´t escape and finally pulls over.The cop approaches the car and says, ¨It´s been a long day and my shift is almost over, so if you can give me a good excuse for your behavior, I¨ ll let you go. ¨The guy thinks for a few seconds and then says, ¨ My wife ran away with a cop about a week ago.I thought you might be that officer trying to give her back!¨",
+"A man got hit in the head with a can of Coke, but he was alright because it was a soft drink.",
+"A bank robber pulls out gun points it at the teller, and says, ¨ Give me all the money or you´re geography!¨The puzzled teller replies, ¨Did you mean to say¨ or you´re history ? ¨¨ The robber says, ¨Don´t change the subject!¨",
+"~Q: How do you make a tissue dance? ~A: Put a little boogie in it.",
+"Brunette: ¨ Where were you born ? ¨~Blonde: ¨ The United States. ¨~Brunette: ¨ Which part ? ¨~Blonde: ¨ My whole body. ¨",
+"A young boy came home from school and told his mother, ¨ I had a big fight with my classmate.He called me a sissy. ¨The mother asked, ¨ What did you do ?¨The boy replied, ¨ I hit him with my purse!¨",
+"~Q: Why can´t you trust an atom ? ~A : Because they make up everything. ",
+"~Q: What do computers eat for a snack? ~A: Microchips!",
+"Did you hear about the guy whose whole left side was cut off? He´s all right now. ",
+"~Q: What´s the difference between a guitar and a fish ? ~A : You can tune a guitar, but you can´t tuna fish.",
+"~Q: Why did the fish blush? ~A: Because it saw the ocean´s bottom. ",
+"Why is it that your nose runs, but your feet smell?",
+"¨THREE TREES AND A WOODPECKER¨  Two tall trees, a birch and a beech, are growing in the woods.A small tree begins to grow between them, and the beech says to the birch, ¨ Is that a son of a beech or a son of a birch ? ¨The birch says he cannot tell, but just then a woodpecker lands on the sapling. The birch says, ¨ Woodpecker, you are a tree expert.Can you tell if that is a son of a beech or a son of a birch ? ¨The woodpecker takes a taste of the small tree and replies, ¨ It is neither a son of a beech nor a son of a birch, It is, however, the best piece of ash I have ever poked my pecker into. ¨Now wipe that smile off your face.",
+"If Mary had Jesus, and Jesus is the lamb of God, does that mean Mary had a little lamb?",
+"A guy goes in for a job interview and sits down with the boss. The boss asks him, “What do you think is your worst quality?” The man says “I’m probably too honest.” The boss says, “That’s not a bad thing, I think being honest is a good quality.” The man replies, “I don’t care about what you think!”",
+"A man can do more than he thinks he can, but he usually does less than he thinks he does.",
+"My memory has gotten so bad it has actually caused me to lose my job. I’m still employed. I just can’t remember where.",
+"Some people say the glass is half full. Some people say the glass is half empty. Engineers say the glass is twice as big as necessary.",
+"I asked the corporate wellness officer, “Can you teach me yoga?” He said, “How flexible are you?” I said, “I can’t make Tuesdays.”",
+"My boss says I have a preoccupation with vengeance. We’ll see about that.",
+"The reason we “nod off to sleep” is so it looks like we’re just emphatically agreeing with everything when we’re in a boring meeting.",
+"When an employment application asks who is to be notified in case of emergency, I always write, “A very good doctor”.",
+"Team work is important; it helps to put the blame on someone else.",
+"I’m great at multitasking. I can waste time, be unproductive, and procrastinate all at once.",
+"Nothing ruins a Friday more than an understanding that today is Tuesday.",
+"I can’t believe I got fired from the calendar factory. All I did was take a day off.",
+"I always tell new hires, don’t think of me as your boss, think of me as a friend who can fire you.",
+"My resumé is just a list of things I hope you never ask me to do.",
+"The proper way to use a stress ball is to throw it at the last person to upset you.",
+"There is a new trend in our office; everyone is putting names on their food. I saw it today, while I was eating a sandwich named Kevin.",
+"My annual performance review says I lack “passion and intensity.” I guess management hasn’t seen me alone with a Big Mac.",
+"I get plenty of exercise – jumping to conclusions, pushing my luck, and dodging deadlines.",
+"How do construction workers party? They raise the roof.",
+"If every day is a gift, I’d like a receipt for Monday. I want to exchange it for another Friday.",
+"Feeling stressed out? Make a nice cup of hot tea and then spill it in the lap of whoever’s bugging you.",
+"I use artificial sweetener at work. I add it to everything I say to my boss.",
+"A clean desk is a sign of a cluttered desk drawer.",
+"The only thing worse than seeing something done wrong is seeing it done slowly.",
+"If at first you don’t succeed, redefine success.",
+"Give me ambiguity or give me something else.",
+"We have enough youth. How about a fountain of “Smart”?",
+"I started out with nothing and I still have most of it.",
+"The boss frowns on anyone yelling: “Hey Weirdo!” He says too many people look up from their work.",
+"Things really haven’t gotten worse. We’ve just improved our inter-departmental communication skills.",
+"Anything that could possibly go wrong often does – as well as a thing or two that couldn’t possibly.",
+"If it wasn’t for the last minute, nothing would get done.",
+"If our boss makes a mistake, it is our mistake.",
+"A diplomat is someone who can tell you to go to hell in such a way that you will look forward to the trip.",
+"To steal ideas from one person is plagiarism. To steal from many is research.",
+"A bus station is where a bus stops. A train station is where a train stops. On my desk, I have a work station…",
+"I like work. It fascinates me. I sit and look at it for hours.",
+"I’m out of bed and dressed. What more do you want?",
+"Experience is what you get when you didn’t get what you wanted.",
+"To be sure of hitting the target, shoot first and call whatever you hit the target.",
+"To err is human, to blame it on someone else shows management potential.",
+"I don’t work well under pressure… or any other circumstance.",
+"Knowledge is knowing a tomato is a fruit; wisdom is not putting it in a fruit salad.",
+"I thought I wanted a career, turns out I just wanted paychecks",
+"Some people are like Slinkies … not really good for anything, but you can’t help smiling when you see one tumble down the stairs.",
+"A work week is so rough that after Monday and Tuesday, even the calendar says WTF.",
+"I didn’t say it was your fault, I said I was blaming you.",
+"Laugh at your problems, everybody else does.",
+"Artificial intelligence is no match for natural stupidity.",
+"He who smiles in a crisis has found someone to blame.",
+"Some cause happiness wherever they go. Others whenever they go.",
+"Worrying works! 90% of the things I worry about never happen.",
+"I couldn’t work today because of an eye problem. I just can’t see myself working today.",
+"When in doubt, mumble.",
+"You’re never too old to learn something stupid.",
+"When tempted to fight fire with fire, remember that the Fire Department usually uses water.",
+"When it comes to work, change is inevitable, except from the vending machine.",
+"If you keep your feet firmly on the ground, you’ll have trouble putting on your pants.",
+"Some mistakes are too much fun to only make once.",
+"Keep the dream alive: hit the snooze button.",
+"If you can stay calm while all around you is chaos, then you probably haven’t completely understood the situation.",
+"Hard work never killed anyone, but why take the chance?",
+"I have all the money I’ll ever need – if I die by 4:00 p.m. today.",
+"The right to be heard does not automatically include the right to be taken seriously.",
+"Archaeologist: someone whose career lies in ruins.",
+"The probability of someone watching you is proportional to the stupidity of your action.",
+"It matters not whether you win or lose: what matters is whether I win or lose.",
+"If you can’t convince them, confuse them.",
+"Progress is made by lazy people looking for an easier way to do things.",
+"I don’t have a solution, but I do admire the problem.",
+"People tend to make rules for others and exceptions for themselves.",
+"Stress is when you wake up screaming and you realize you haven’t fallen asleep yet.",
+"Sometimes the best helping hand you can give is a good, firm push.",
+"Drink coffee! Do stupid things faster with more energy!",
+"I don’t mind coming to work, it’s the 8-hour wait to go home I can’t stand.",
+"A positive attitude may not solve all your problems, but it will annoy enough people to make it worth the effort.",
+"The trouble with being punctual is that nobody’s there to appreciate it.",
+"Just about the time when you think you can make ends meet, somebody moves the ends.",
+"My biggest professional ambition is to get a desk where no one can see my computer monitor but me.",
+"A committee is twelve men doing the work of one.",
+"If everything seems to be coming your way, you’re probably in the wrong lane.",
+"It’s not how good your work is, it’s how well you explain it.",
+"Efficiency is a highly developed form of laziness.",
+"The farther away the future is, the better it looks.",
+"Some of us learn from the mistakes of others; the rest of us have to be the others.",
+"Discretion is being able to raise your eyebrow instead of your voice.",
+"I pretend to work as long as they pretend to pay me.",
+"I like my job only marginally more than I like being homeless.",
+"The trouble with doing something right the first time is that nobody appreciates how difficult it was.",
+"The human brain is a wonderful thing. It starts working the moment you are born, and never stops until you stand up to speak in public.",
+"Do not walk behind me, for I may not lead. Do not walk ahead of me, for I may not follow. Do not walk beside me either. Just pretty much leave me alone.",
+"There are two kinds of people who don’t say much: those who are quiet and those who talk a lot.",
+"With a calendar, your days are numbered.",
+"A hard thing about a business is minding your own.",
+"I think they picked me for my motivational skills. Everyone always says they have to work twice as hard when I’m around!",
+"Early to bed, early to rise makes people suspicious.",
+"Many people quit looking for work when they find a job.",
+"All I ask is a chance to prove money can’t make me happy.",
+"It’s not who you know, it’s whom you know.",
+"Nothing is foolproof to a sufficiently talented fool.",
+"~Q: What is the tallest building in the entire world? ~A: The library, because it has so many stories.",
+"~Q: Why did the school kids eat their homework? ~A: Because their teacher told them it was a piece of cake.",
+"I couldn't figure out why the baseball kept getting larger. Then it hit me.",
+"~Q: If you have 13 apples in one hand and 10 oranges in the other, what do you have? ~A: Big hands.",
+"Whoever invented knock knock jokes should get a no bell prize.",
+"~Q: What did the green grape say to the purple grape? ~A: ¨Breathe, stupid!¨",
+"A man went to his lawyer and told him, ¨My neighbor owes me $500 and he won’t pay up. What should I do?¨ ¨Do you have any proof he owes you the money?¨ asked the lawyer. ¨Nope,¨ replied the man. ¨OK, then write him a letter asking him for the $5,000 he owed you,¨ said the lawyer. ¨But it's only $500,¨ replied the man. ¨Precisely. That’s what he will reply and then you’ll have your proof!¨",
+"So two Irishmen are traveling to Australia. Before they leave home, one of their dads gives them both a bit of advice: ¨You watch them Aussie cab drivers. They´ll rob you blind. Don´t you go paying them what they ask. You haggle.¨ At the Sydney airport, the Irishmen catch a cab to their hotel. When they reach their destination, the cabbie says, ¨That´ll be twenty dollars, lads.¨ ¨Oh no you don´t! My dad warned me about you. You´ll only be getting fifteen dollars from me,¨ says one of the men. ¨And you´ll only be getting fifteen from me too,¨ adds the other.",
+"The energizer bunny was arrested on a charge of battery.",
+"A woman was taking an afternoon nap. When she woke up, she told her husband, ¨I just dreamed that you gave me a pearl necklace. What do you think it means?¨ ¨You´ll know tonight,¨ he said. That evening, the man came home with a small package and gave it to his wife. Delighted, she opened it to find a book entitled ¨The Meaning of Dreams.¨",
+"~Q: What’s the best thing about Switzerland? ~A: I don´t know, but the flag is a big plus.",
+"Bob: ¨Holy crap, I just fell off a 50 ft ladder.¨ ~Jim: ¨Oh my God, are you okay?¨ ~Bob: ¨Yeah it´s a good thing I fell off the first step.¨",
+"~Q: Why is England the wettest country? ~A: Because so many kings and queens have been reigning there.",
+"~Q: What type of sandals do frogs wear? ~A: Open-toad!",
+"Mahatma Gandhi often walked barefoot which produced an impressive set of callouses on his feet. He also ate very little, making him rather frail and with his odd diet he often suffered from bad breath. This made him a super calloused fragile mystic hexed with halitosis.",
+"Teacher: ¨What is the chemical formula for water?¨ ~Student: ¨HIJKLMNO.¨ ~Teacher: ¨What are you talking about?¨ ~Student: ¨Yesterday you said it´s H to O!¨",
+"Two little boys were known troublemakers, stealing everything they could get their hands, even from the church. One day a priest stopped one of the boys and asked, ¨Where is God?¨ The boy shrugged and the priest repeated, ¨Where is God?¨ The boy ran out of the cathedral crying to his home where he hid in a closet. Eventually his brother found him and asked, ¨What´s wrong?¨ The crying boy replied, ¨We´re in trouble now! God is missing and they think we took him!¨",
+"If the right side of the brain controls the left side of the body, then lefties are the only ones in their right mind.",
+"How many snowboarders does it take to screw in a lightbulb? 50: 3 to die trying, 1 to actually pull it off, and 46 other to say, ¨man, I could do that!¨",
+"Four men are in the hospital waiting room because their wives are having babies. A nurse approaches the first guy and says, “Congratulations! You´re the father of twins.” “That´s odd,” answers the man. “I work for the Minnesota Twins!” A nurse then yells the second man, “Congratulations! You´re the father of triplets!” “That´s weird,” answers the second man. “I work for the 3M company!” A nurse goes up to the third man saying, “Congratulations! You´re the father of quadruplets.” “That´s strange,” he answers. “I work for the Four Seasons hotel!” The last man begins groaning and banging his head against the wall. “What´s wrong?” the others ask. “I work for 7 Up!”",
+"~Q: How many politicians does it take to change a light bulb? ~A: Two: one to change it and another one to change it back again.",
+"A boy with a monkey on his shoulder was walking down the road when he passed a policeman who said, ¨Now, now young lad, I think you had better take that monkey the zoo.¨ The next day, the boy was walking down the road with the monkey on his shoulder again, when he passed the same policeman. The policeman said, ¨Hey there, I thought I told you to take that money to the zoo!¨ The boy answered, ¨I did! Today I´m taking him to the cinema.¨",
+
+// Joke set 2 96 jokes
+"I have all the money I’ ll ever need–if I die by 4: 00 p.m.today.",
+"I asked God for a bike, but I know God doesn’ t work that way.So I stole a bike and asked for forgiveness.",
+"I have the world’ s largest collection of seashells.I keep it on all the beaches of the world.Perhaps you’ ve seen it.",
+"I once heard two ladies going on and on about the pains of childbirth and how men don’ t seem to know what real pain is.I askedif either of them ever got themselves caught in a zipper.",
+"Only in America… do banks leave both doors open and then chain the pens to the counters.",
+"I saw a woman wearing a sweat shirt with“ Guess” on it… so I said“ Implants ? ”",
+"Children in the dark make accidents, but accidents in the dark make children.",
+"Light travels faster than sound.This is why some people appear bright until you hear them speak.",
+"Why do Americans choose from just two people to run for president and 50 for Miss America ?",
+"I was so poor growing up.If I wasn’ t born a boy, I’ d have nothing to play with.",
+"Campers: Nature’ s way of feeding mosquitoes",
+"A bank is a place that will lend you money, if you can prove that you don’ t need it.",
+"If you think nobody cares if you’ re alive, try missing a couple of payments.",
+"Do not argue with an idiot.He will drag you down to his level and beat you with experience.",
+"A computer once beat me at chess, but it was no match for me at kick boxing.",
+"I want to die peacefully in my sleep, like my grandfather..Not screaming and yelling like the passengers in his car.",
+"If your dog is barking at the back door and your wife is yelling at the front door, who do you let in first ? The dog, of course.He’ ll shut up once you let him in .",
+"Work harder: millions on welfare depend on you.",
+"There’ s a fine line between cuddling and holding someone down so they can’ t get away.",
+"Some people are like Slinkies… not really good for anything, but you can’ t help smiling when you see one tumble down the stairs.",
+"Never, under any circumstances, take a sleeping pill and a laxative on the same night.",
+"If sex is a pain in the ass, then you’ re doing it wrong…",
+"Better to remain silent and be thought a fool, than to speak and remove all doubt.",
+"Politicians and diapers have one thing in common.They should both be changed regularly, and for the same reason.",
+"Crowded elevators smell different to midgets.",
+"How is it one careless match can start a forest fire, but it takes a whole box to start a campfire ?",
+"Did you hear about the Chinese couple that had a retarded baby ? They named him“ Sum Ting Wong”.",
+"Don’ t piss me off!I’ m running out of places to hide the bodies.",
+"You know, they got a luggage store in the airport ? A place to buy a piece of luggage ? How late do you have to be for a flight where you’ re like, ‘Fuck it– just grab a pile of shit.We’ ll get a bag at the airport’.",
+"Some cause happiness wherever they go.Others whenever they go.",
+"Did you know that dolphins are so smart that within a few weeks of captivity, they can train people to stand on the very edge of the pool and throw them fish ?",
+"To steal ideas from one person is plagiarism.To steal from many is research.",
+"I discovered I scream the same way whether I’ m about to be devoured by a great white shark or if a piece of seaweed touches my foot.",
+"I haven’ t spoken to my wife in years.I didn’ t want to interrupt her.",
+"I love to go shopping.I love to freak out salespeople.They ask me if they can help me, and I say, “Have you got anything I’ d like ? ”Then they ask me what size I need, and I say, “Extra medium.”",
+"Lord, if I can’ t be skinny, please let all my friends be fat.",
+"If 4 out of 5 people SUFFER from diarrhea… does that mean that one enjoys it ?",
+"Booze may not be the answer, but it helps you forget the question.",
+"Please Tell Your Pants Its Not Polite To Point.",
+"If God is watching us, the least we can do is be entertaining.",
+"Some people say“ If you can’ t beat them, join them”.I say“ If you can’ t beat them, beat them”, because they will be expecting you to join them, so you will have the element of surprise.",
+"One tequila, two tequila, three tequila, floor.",
+"War does not determine who is right– only who is left.",
+"This isn’ t an office.It’ s hell with fluorescent lighting.",
+"Hippopotomonstrosesquippedaliophobia: Fear of long words.",
+"A bus station is where a bus stops.A train station is where a train stops.On my desk, I have a work station..",
+"WARNING: The consumption of alcohol may cause you to think you can sing.",
+"Why don’ t you slip into something more comfortable… like a coma.",
+"Why does someone believe you when you say there are four billion stars, but check when you say the paint is wet ?",
+"Virginity is like a soapbubble, one prick and it is gone.",
+"It’ s not the fall that kills you; it’ s the sudden stop at the end.",
+"Hallmark Card: “I’ m so miserable without you, it’ s almost like you’ re still here.”",
+"Children: You spend the first 2 years of their life teaching them to walk and talk.Then you spend the next 16 years telling them to sit down and shut - up.",
+"The difference between an oral thermometer and a rectal thermometer is in the taste.",
+"A little boy asked his father, “Daddy, how much does it cost to get married ? ”Father replied, “I don’ t know son, I’ m still paying.”",
+"The early bird might get the worm, but the second mouse gets the cheese.",
+"A clear conscience is usually the sign of a bad memory.",
+"What has four legs and an arm ? A happy pit bull.",
+"I thought I wanted a career, turns out I just wanted paychecks.",
+"First things first, but not necessarily in that order.",
+"My psychiatrist told me I was crazy and I said I want a second opinion.He said okay, you’ re ugly too.",
+"Why do women have smaller feet than men ? It’ s one of those“ evolutionary things” that allows them to stand closer to the kitchen sink.",
+"If you can read this, the bitch fell off…[Seen on the back of a biker’ s vest]",
+"Plan to be spontaneous– tomorrow.",
+"During sex, my girlfriend always wants to talk to me.Just the other night she called me from a hotel.",
+"A computer program will always do what you tell it to, and seldom what you want it to.",
+"Materialism: buying things we don’ t need with money we don’ t have to impress people that don’ t matter.",
+"I was such an ugly kid.When I played in the sandbox the cat kept covering me up.",
+"Never hit a man with glasses.Hit him with a baseball bat.",
+"If you are supposed to learn from your mistakes, why do some people have more than one child.",
+"Women like silent men, they think they’ re listening.",
+"I always take life with a grain of salt, …plus a slice of lemon, …and a shot of tequila.",
+"By the time a man realises that his father was right, he has a son who thinks he’ s wrong.",
+"If God wanted me to touch my toes, he would have put them on my knees.",
+"My opinions may have changed, but not the fact that I am right.",
+"I got in a fight one time with a really big guy, and he said, “I’ m going to mop the floor with your face.”I said, “You’ ll be sorry.”He said, “Oh, yeah ? Why ? ”I said, “Well, you won’ t be able to get into the corners very well.”",
+"Opinions are indeed like assholes, some are just bigger than others.",
+"If you keep your feet firmly on the ground, you’ ll have trouble putting on your pants.",
+"Sex is not the answer.Sex is the question.“Yes” is the answer.",
+"Hospitality: making your guests feel like they’ re at home, even if you wish they were.",
+"I like work.It fascinates me.I sit and look at it for hours.",
+"Evening news is where they begin with‘ Good evening’, and then proceed to tell you why it isn’ t.",
+"Experience is what you get when you didn’ t get what you wanted.",
+"The last thing I want to do is hurt you.But it’ s still on the list.",
+"Behind every successful man is his woman.Behind the fall of a successful man is usually another woman.",
+"I don’ t have an attitude problem.You have a perception problem.",
+"You may have a heart of gold, but so does a hard - boiled egg.",
+"Smoking cures weight problems, eventually.",
+"A TV can insult your intelligence, but nothing rubs it in like a computer.",
+"The voices in my head may not be real, but they have some good ideas!",
+"I didn’ t fight my way to the top of the food chain to be a vegetarian",
+"I ran three miles today.Finally I said, “Lady take your purse.”",
+"I said“ no” to drugs, but they just wouldn’ t listen.",
+"I took a course in speed waiting.Now I can wait an hour in only ten minutes.",
+"I was reading the dictionary, I thought it was a poem about everything.",
+"I watched the Indy 500, and I was thinking that if they left earlier they wouldn’ t have to go so fast.",
+
+
+// Joke set 2 18 jokes,
+
+"A company installed a new security system.Now all the doors are alarmed.",
+
+"We don’ t know which is worse– having more problems than solutions or more solutions than problems.",
+
+"We learn from our mistakes– and never lack for study material.",
+
+"You can tell when something is an office secret: it’ s whispered from person to person.",
+
+"Anyone who wants a rush job really badly will more than likely get it that way.",
+
+"It seems we have a few tasks around here so simple some people can perform them in their sleep.",
+
+"Some days it seems we have nothing but bad breaks and coffee breaks.",
+
+"We react to a crisis with the utmost decorum.The shouting and screaming are only coincidental.",
+
+"Someone in administration put up a sign reading“ Think!”and would like to know who added: “Or Thwim!”",
+
+"We hope we have put up an adequate number of exit and directional signs so no one will have any trouble getting lost.",
+
+"The boss frowns on anyone yelling: “Hey Weirdo!”He says too many people look up from their work.",
+
+"When things go wrong, there’ s usually plenty of blame to go around– no need for one person to hog it all.",
+
+"We have at least six ways to get outside: The front entrance, the back entrance, three side entrances– and dial nine.",
+
+"It’ s always a race to get everything sorted out before everyone gets out of sorts.",
+
+"Things really haven’ t gotten worse.We’ ve just improved our inter - departmental communication skills.",
+
+"Anything that could possibly go wrong often does– as well as a thing or two that couldn’ t possibly.",
+
+"Despite appearances to the contrary, we would not rather be wrong than quiet.",
+
+"We all wish for the kind of computer that, when a mistake occurs, it can put the blame where it belongs: on another computer.",
+
+
+// before 320 array 319
+// new list of jokes
+
+
+// 225 Jokes
+// SECTION 1
+"We live in a society where pizza gets to your house before the police.",
+
+"If I agreed with you we’ d both be wrong.",
+
+// SECTION 2,
+
+"We never really grow up, we only learn how to act in public.",
+
+"Having sex is like playing bridge.If you don’ t have a good partner, you’ d better have a good hand.",
+
+"Knowledge is knowing a tomato is a fruit; Wisdom is not putting it in a fruit salad.",
+
+"Going to church doesn’ t make you a Christian any more than standing in a garage makes you a car.",
+
+"My mother never saw the irony in calling me a son - of -a - bitch.",
+
+"Women will never be equal to men until they can walk down the street with a bald head and a beer gut, and still think they are sexy.",
+
+"Whenever I fill out an application, in the part that says“ If an emergency, notify: ”I put“ DOCTOR”.What’ s my mother going to do ?",
+
+"The shinbone is a device for finding furniture in a dark room.",
+
+"I didn’ t say it was your fault, I said I was blaming you.",
+
+"God must love stupid people.He made SO many.",
+
+"Fighting for peace is like shouting for silence",
+
+"The sole purpose of a child’ s middle name, is so he can tell when he’ s really in trouble.",
+
+"Always borrow money from a pessimist.He won’ t expect it back.",
+
+"You do not need a parachute to skydive.You only need a parachute to skydive twice.",
+
+"We have enough gun control.What we need is idiot control.",
+
+"I intend to live forever.So far, so good.",
+
+"Money can’ t buy happiness, but it sure makes misery easier to live with.",
+
+"Worrying works!90 % of the things I worry about never happen.",
+
+"Just remember… if the world didn’ t suck, we’ d all fall off".,
+
+"I used to be indecisive.Now I’ m not sure.",
+
+"You’ re never too old to learn something stupid.",
+
+"A bargain is something you don’ t need at a price you can’ t resist.",
+
+"Jesus loves you, but everyone else thinks you’ re an asshole.",
+
+"With sufficient thrust, pigs fly just fine.",
+
+"Knowledge is power, and power corrupts.So study hard and be evil.",
+
+"Nostalgia isn’ t what it used to be.",
+
+"You are such a good friend that if we were on a sinking ship together and there was only one life jacket… I’ d miss you heaps and think of you often.",
+
+
+"If at first you don’ t succeed, skydiving is not for you!",
+
+"A bus is a vehicle that runs twice as fast when you are after it as when you are in it.",
+
+"Some people hear voices..Some see invisible people..Others have no imagination whatsoever.",
+
+"If winning isn’ t everything why do they keep score ?",
+
+"Whoever coined the phrase“ Quiet as a mouse” has never stepped on one.",
+
+
+
+// SECTION 3
+
+"Change is inevitable, except from a vending machine.",
+
+"I don’ t suffer from insanity.I enjoy every minute of it.",
+
+"When you go into court, you are putting your fate into the hands of people who weren’ t smart enough to get out of jury duty.",
+
+"What’ s the difference between a northern fairytale and a southern fairytale ? A northern fairytale begins“ Once upon a time…” A southern fairytale begins“ Y’ all ain’ t gonna believe this shit…”",
+
+"Children seldom misquote you.In fact, they usually repeat word for word what you shouldn’ t have said.",
+
+"Good health is merely the slowest possible rate at which one can die.",
+
+"If Bill Gates had a penny for every time I had to reboot my computer… oh wait, he does.",
+
+"George Washington said“ We would have a black president when pigs fly!”…well, swine flu.",
+
+"Haikus are easy.But sometimes they don’ t make sense.Refrigerator.",
+
+"You know your children are growing up when they stop asking you where they came from and refuse to tell you where they’ re going.",
+
+"Deja Vu– When you think you’ re doing something you’ ve done before, it’ s because God thought it was so funny, he had to rewind it for his friends.",
+
+"The difference between an oral thermometer and a rectal thermometer is in the taste.",
+
+"Money talks… but all mine ever says is good - bye.",
+
+"It is hard to understand how a cemetery raised its burial cost and blamed it on the cost of living.",
+
+"By the time you learn the rules of life, you’ re too old to play the game.",
+
+"Does time fly when you’ re having sex or was it really just one minute ?",
+
+"If you’ re looking for sympathy, you’ ll find it in the dictionary between“ shit” and“ syphilis”",
+
+"Why do they lock gas station bathrooms ? Are they afraid someone will clean them ?",
+
+"Keep the dream alive : Hit the snooze button.",
+
+"I don’ t have a beer gut, I have a protective covering for my rock hard abs.",
+
+"Build a man a fire, and he’ ll be warm for a day.Set a man on fire, and he’ ll be warm for the rest of his life.",
+
+"We have all heard that a million monkeys banging on a million typewriters will eventually reproduce the entire works of Shakespeare.Now, thanks to the Internet, we know this is not true.",
+
+"Who was the first to see a cow and think“ I wonder what will happen if I squeeze these dangly things and drink whatever comes out ? ”",
+
+"Remember, if you smoke after sex you’ re doing it too fast.",
+
+"Why didn’ t Noah swat those two mosquitoes ?",
+
+"Friends may come and go, but enemies accumulate.",
+
+"The difference between in -laws and outlaws ? Outlaws are wanted.",
+
+"If you can stay calm while all around you is chaos, then you probably haven’ t completely understood the situation.",
+
+"It’ s amazing that the amount of news that happens in the world everyday always just exactly fits the newspaper.",
+
+"I have all the money I’ ll ever need– if I die by 4: 00 p.m.today.",
+
+"Two years ago I married a lovely young virgin, and if that doesn’ t change soon, I’ m gonna divorce him.",
+
+"Dogs have masters.Cats have staff.",
+
+"Isn’ t it odd the way everyone automatically assumes that the goo in soap dispensers is always soap ? I like to fill mine with mustard, just to teach people a lesson in trust.",
+
+"Well aren’ t you a waste of two billion years of evolution.",
+
+"When you choke a smurf, what color does it turn ?",
+
+"Archeologist : someone whose carreer lies in ruins.",
+
+"Join The Army, visit exotic places, meet strange people, then kill them.",
+
+"Women should not have children after 35; Really…! 35 children are enough.",
+
+"Why do people keep running over a string a dozen times with their vacuum cleaner, then reach down, pick it up, examine it, then put it down to give their vacuum one more chance ?",
+
+"I don’ t have an attitude; I have a personality you can’ t handle.",
+
+"Impotence: Nature’ s way of saying“ No hard feelings”.",
+
+"There are three kinds of people: The ones who learn by reading.The ones who learn by observation.And the rest of them who have to touch the fire to learn it’ s hot.",
+
+"We are all time travelers moving at the speed of exactly 60 minutes per hour",
+
+"America is a country which produces citizens who will cross the ocean to fight for democracy but won’ t cross the street to vote.",
+
+"Vegetarian: Native American definition for“ lousy hunter”.",
+
+"The Miss Universe pageant is fixed.All the winners are from Earth.",
+
+"If you can’ t convince them, confuse them.",
+
+"Progress is made by lazy men looking for an easier way to do things.",
+
+"See, the problem is that God gives men a brain and a penis, and only enough blood to run one at a time.",
+
+"I read recipes the same way I read science fiction.I get to the end and I think, “Well, that’ s not going to happen.”",
+
+"Smith & Wesson: The original point and click interface.",
+
+"The difference between fiction and reality ? Fiction has to make sense.",
+
+"100, 000 sperm and you were the fastest ?",
+
+"A friend is someone who will help you move.A GOOD friend is someone who will help you move a dead body.",
+
+"Why do we press harder on a remote control when we know the batteries are getting weak ?",
+
+"Clinton lied.A man might forget where he parks or where he lives, but he never forgets oral sex, no matter how bad it is.",
+
+"What if there were no hypothetical questions ?",
+
+"For every action, there is a corresponding over - reaction.",
+
+"I’ m a humble person, really.I’ m actually much greater than I think I am.",
+
+"Why is it called Alcoholics ANONYMOUS when the first thing you do is stand up and say, ‘My name is Peter and I am an alcoholic’",
+
+"The best way to lie is to tell the truth, carefully edited truth.",
+
+"Every day, man is making bigger and better fool - proof things, and every day, nature is making bigger and better fools.So far, I think nature is winning.",
+
+"I don’ t have a solution, but I do admire the problem.",
+
+"The hardest thing to learn in life is which bridge to cross and which to burn.",
+
+"There are two kinds of friends: those who are around when you need them, and those who are around when they need you.",
+
+"Don’t steal.That’s the government’s job.",
+
+"A celebrity is someone who works hard all his life to become known and then wears dark glasses to avoid being recognized.",
+
+"IRS: We’ve got what it takes to take what you’ve got.",
+
+"What is the most important thing to learn in chemistry ? Never lick the spoon.",
+
+"Lite: the new way to spell“ Light, ”now with 20 % fewer letters!",
+
+"Unless you’ re the lead dog, the view never changes.",
+
+"A conscience is what hurts when all your other parts feel so good.",
+
+"No one is listening until you fart.",
+
+"Only dead fish go with the flow.",
+
+"Drink coffee!Do stupid things faster with more energy!",
+
+"Life’ s like a bird, it’ s pretty cute until it shits on your head.",
+
+"I’ m multi - talented: I can talk and piss you off at the same time.",
+
+"The easiest job in the world has to be coroner.Surgery on dead people.What’ s the worst thing that could happen ? If everything went wrong, maybe you’ d get a pulse.",
+
+"Foreign Aid: The transfer of money from poor people in rich countries to rich people in poor countries.",
+
+"1 in 5 people in the world are Chinese.There are 5 people in my family, so it must be one of them.It’ s either my mum or my dad.Or my older brother Colin.Or my younger brother Ho - Cha - Chu.But I think it’ s Colin.",
+
+"If corn oil comes from corn, where does baby oil come from ?",
+
+"True friendship comes when the silence between two people is comfortable.",
+
+"The trouble with being punctual is that nobody’ s there to appreciate it.",
+
+"If I’ d shot you sooner, I’ d be out of jail by now.",
+
+"Insanity is hereditary.You get it from your kids.",
+
+"Everything is edible, some things are only edible once.",
+
+"If Wal - Mart is lowering prices every day, why isn’ t anything in the store is free yet ?",
+
+"There are no winners in life… only survivors.",
+
+"Politics is the art of looking for trouble, finding it, misdiagnosing it and then misapplying the wrong remedies.",
+
+
+
+"Wise people think all they say, fools say all they think.",
+
+"The knack of flying is learning how to throw yourself at the ground and miss.",
+
+"If you must choose between two evils, pick the one you’ ve never tried before.",
+
+"It’ s so simple to be wise.Just think of something stupid to say and then don’ t say it.",
+
+"We are all part of the ultimate statistic– ten out of ten die.",
+
+"Ever notice that people who spend money on beer, cigarettes, and lottery tickets are always complaining about being broke and not feeling well ?",
+
+"If everything seems to be coming your way, you’ re probably in the wrong lane.",
+
+"I’ m in shape.Round is a shape isn’ t it",
+
+"They keep saying the right person will come along, I think mine got hit by a truck.",
+
+"Alcoholism is the only disease that tries to convince you that you don’ t have it.",
+
+"I sometimes go to my own little world, but that’ s okay, they know me there.",
+
+"I like long walks, especially when they are taken by people who annoy me.",
+
+"My drinking team has a bowling problem.",
+
+"A fine is a tax for doing wrong.A tax is a fine for doing well.",
+
+"Why do they use sterilized needles for death by lethal injection ?",
+
+"It’ s not how good your work is, it’ s how well you explain it.",
+
+"Seen it all, done it all, can’ t remember most of it.",
+
+"I wanna hang a map of the world in my house.Then I’ m gonna put pins into all the locations that I’ ve traveled to.But first, I’ m gonna have to travel to the top two corners of the map so it won’ t fall down.",
+
+"If a turtle doesn’ t have a shell, is he homeless or naked ?",
+
+"Anyone who has never made a mistake has never tried anything new.",
+
+"Failure is not falling down, it is not getting up again.",
+
+"Bills travel through the mail at twice the speed",
+
+"The best thing about living at the beach is that you only have assholes on three sides of you.",
+
+"Silence doesn’ t mean your sexual performance left her speechless.",
+
+"Why is it that in the US: If you take off all your clothes and walk down the street waving a machete and firing an Uzi, terrified citizens will phone the police and report: “There’ s a naked person outside!”",
+
+"Canadians are more polite when they are being rude than Americans are when they are being friendly.",
+
+"Never test the depth of the water with both feet.",
+
+"Did you hear about the guy whose whole left side was cut off ? He’ s all right now.",
+
+"I have to exercise early in the morning before my brain figures out what I’ m doing.",
+
+"You are depriving some poor village of its idiot.",
+
+"Every so often, I like to go to the window, look up, and smile for a satellite picture.",
+
+"At every party there are two kinds of people: those who want to go home and those who don’ t.The trouble is, they are usually married to each other.",
+
+"The journey of a thousand miles begins with a broken fan belt and a flat tire.",
+
+"Constipated people don’ t give a crap.",
+
+"Why is a bra singular and panties plural ?",
+
+"Be safety conscious.80 % of people are caused by accidents.",
+
+"Without ME, it’ s just AWESO.",
+
+"If you do not say it, they can’ t repeat it.",
+
+"I was thinking about how people seem to read the Bible a whole lot more as they get older.Then it dawned on me… they were cramming for their finals.",
+
+"Be careful of your thoughts, they may become words at any moment.",
+
+"If you don’ t care where you are, then you ain’ t lost.",
+
+"Your gene pool could use a little chlorine.",
+
+"You can easily judge the character of a man by how he treats those who can do nothing for him.",
+
+"You ever make fun of someone so much, you think you should thank them for all the good times you’ ve had ?",
+
+"You have two choices in life : You can stay single and be miserable, or get married and wish you were dead.",
+
+"I am not a vegetarian because I love animals.I am a vegetarian because I hate plants.",
+
+"Ham and Eggs: A day’ s work for a chicken, a lifetime commitment for a pig.",
+
+"If the number 2 pencil is the most popular, why is it still number 2 ?",
+
+"Don’ t hate me because I’ m beautiful.Hate me because your boyfriend thinks so.",
+
+"Everyone has the right to be stupid, but you are abusing the privilege!",
+
+"The human brain is a wonderful thing.It starts working the moment you are born, and never stops until you stand up to speak in public.",
+
+"Do not walk behind me, for I may not lead.Do not walk ahead of me, for I may not follow.Do not walk beside me either.Just pretty much leave me the hell alone.",
+
+"Strangers have the best candy.",
+
+"Rap is to music as Etch - A - Sketch is to art.",
+
+"Trust but verify.",
+
+"The difference between divorce and legal separation is that a legal separation gives a husband time to hide his money.",
+
+"The last time I was inside a woman was when I went to the Statue of Liberty.",
+
+"If a mute kid swears does his mother wash his hands with soap ?",
+
+"How do you get holy water ? Boil the hell out of it.",
+
+"I’ d kill for a Nobel Peace Prize.",
+
+"Why do you need a driver’ s license to buy liquor when you can’ t drink and drive ?",
+
+"Sometimes when I reflect back on all the beer I drink I feel shamed.Then I look into the glass and think about the workers in the brewery and all of their hopes and dreams.If I didn’ t drink this beer, they might be out of work and their dreams would be shattered.Then I say to myself, “It is better that I drink this beer and let their dreams come true than be selfish and worry about my liver.",
+
+"Your kid may be an honors student, but you’ re still an idiot.",
+
+"Insanity is defined as doing the same thing over and over again, expecting different results.",
+
+"Think of how stupid the average person is, and realize half of them are stupider than that.",
+
+"It was love at first sight.Then I took a second look!!",
+
+"Everybody is somebody else’ s weirdo.",
+
+"I think, therefore I’ m single.",
+
+"Should crematoriums give discounts for burn victims ?",
+
+"When you stop believing in Santa Claus is when you start getting clothes for Christmas!",
+
+"I bet you I could stop gambling.",
+
+"The only difference between the people I’ ve dated and Charles Manson is that Manson has the decency to look like a nut case when you first meet him.",
+
+"Sex on tv can’ t hurt unless you fall off.",
+
+"Two antennas met on a roof, fell in love and got married.The ceremony wasn’ t much, but the reception was excellent.",
+
+"Who invented the brush they put next to the toilet ? That thing hurts!",
+
+"Never agree to plastic surgery if the doctor’ s office is full of portraits by Picasso.",
+
+"Accept it.Your parents HAVE had sex before.",
+
+"668– The neighbour of the beast.",
+
+"I love oral sex… it’ s the phone bill I hate.",
+
+"Children in the back seats of cars cause accidents, but accidents in the back seats of cars cause children.",
+
+"I’ ve learned that the people you care most about in life are taken from you too soon and all the less important ones just never go away.",
+
+"Squirrels– nature’ s speed bumps.",
+
+"When you go to the drugstore, why are the condoms not in with the other party supplies ?",
+
+"It’ s bad luck to be superstitious.",
+
+"There are two kinds of people who don’ t say much: those who are quiet and those who talk a lot.",
+
+"The reason grandchildren and grandparents get along so well is because they have a common“ enemy”.",
+
+"Friends are like condoms: They protect you when things get hard.",
+
+"If it’ s true that we are here to help others, then what exactly are the others here for ?",
+
+"The sex was so good that even the neighbors had a cigarette.",
+
+"It’ s not the bullet that kills you, it’ s the hole.",
+
+"If good things come in small packages, then more good things can come in large packages.",
+
+"My wife ran off with my best friend last week.I miss him!",
+
+"A woman has got to love a bad man once or twice in her life, to be thankful for a good one.",
+
+"A cat, by any other name, is still a sneaky little furball that barfs on the furniture.",
+
+"Laugh and the world laughs with you.Snore and you sleep alone",
+
+"Being in a nudist colony probably takes all the fun out of Halloween.",
+
+"Married men live longer than single men, but they’ re a lot more willing to die.",
+
+"If life hands you lemons, break out the tequila!",
+
+"Beauty is only skin deep… but ugly goes all the way to the bone!",
+
+"A cheap shot is a terrible thing to waste.",
+
+"Most women don’ t know where to look when they’ re eating a banana.",
+
+"If you go to sleep with a itching ass you will wake up with a stinking finger…",
+
+"If you’ re going to ride my ass at least pull my hair and make me scream!",
+
+
+//ANCHOR 
+// Before 545 index 544
+
+// 220 jokes
+
+// Funny One - Liner Jokes
+
+"As long as there are tests, there will be prayers in schools.",
+
+"What did one ocean say to the other ocean ? Nothing, they just waved.",
+
+"A day without sunshine is like, night.",
+
+"Born free, taxed to death.",
+
+"For Sale: Parachute.Only used once, never opened.",
+
+"You cannot eat me unless you spread me– Butter",
+
+"A day without smiling is a day wasted.",
+
+"Sometimes we expect more from others because we would be willing to do that much more for them.",
+
+"Love may be blind, but marriage is a real eye - opener.",
+
+"Why did the scientist install a knocker on his door ? He wanted to win the No - bell prize!",
+
+"When everything’ s coming your way, you’ re in the wrong lane.",
+
+"Why do men find it difficult to make eye contact ? Breasts don’ t have eyes.",
+
+"A computer once beat me at chess, but it was no match for me at kickboxing.",
+
+"You cannot taste me until you undress me.–Banana",
+
+"You cannot eat me unless you lick me.–Ice - cream",
+
+"You cannot play with me unless you blow me.–Balloon",
+
+"A bank is a place that will lend you money if you can prove that you don’ t need it.",
+
+"What is faster Hot or cold ? Hot, because you can catch a cold.",
+
+"What’ s the difference between a new husband and a new dog ? After a year, the dog is still excited to see you.",
+
+"Why is it so hard for women to find men that are sensitive, caring, and good - looking ? Because those men already have boyfriends.",
+
+"Why is the man who invests all your money called a broker ?",
+
+"My birth certificate was a letter of apology that my dad got from the condom company.",
+
+"Time is what keeps things from happening all at once.",
+
+"Lottery: a tax on people who are bad at math.",
+
+"I just let my mind wander, and it didn’ t come back.",
+
+"We’ ve got what it takes to take what you have got.",
+
+"I can handle pain until it hurts.",
+
+"Time flies like an arrow; fruit flies like a banana.",
+
+"What’ s the difference between a paycheck and a pen * s ? You don’ t have to beg your wife to blow your paycheck.",
+
+"I say no to alcohol, it just doesn’ t listen.",
+
+"Whenever I find the key to success, someone changes the lock.",
+
+"Why did the bee get married ? Because he found his honey.",
+
+"What do you call a boomerang that doesn’ t come back ? A stick.",
+
+"If at first, you don’ t succeed, destroy all evidence that you tried.",
+
+"Eat right.Stay fit.Die anyway.",
+
+"Maybe if we all emailed the constitution to each other, the NSA will finally read it.",
+
+"A gift card is a great way to say, “Go buy your own f * ckin’ present”.",
+
+"I’ m naming my TV remote Waldo for obvious reasons.",
+
+"Isn’ t it weird how when a cop drives by you feel paranoid instead of protected ?",
+
+"It’ s so cold outside, I actually saw a gangster pull his pants up.",
+
+"You’ re not fat, you’ re just… easier to see.",
+
+"I have the heart of a lion.And a lifetime ban from the zoo.",
+
+"A recent study has found that women who carry a little extra weight live longer than the men who mention it.",
+
+"Welcome to America– Where being obese is genetics but being gay is a choice.",
+
+"My girlfriend told me to go out and get something that makes her look sexy..so I got drunk.",
+
+"Today; I saw a baby with a shirt that said, “I’ m what happened in Vegas”",
+
+"Life is all about perspective.The sinking of the Titanic was a miracle to the lobsters in the ship’ s kitchen.",
+
+"Dating a single mother is like continuing from somebody else’ s saved game.",
+
+"I’ m out of bed and dressed.What more do you want ?",
+
+"I used to think I was indecisive, but now I’ m not too sure.",
+
+"Ninety - nine percent of lawyers give the rest a bad name.",
+
+"Borrow money from a pessimist– they don’ t expect it back.",
+
+"What’ s another word for“ thesaurus” ?",
+
+"Everywhere is walking distance if you have the time.",
+
+"A flashlight is a case for holding dead batteries.",
+
+"Be nice to your kids.They’ ll choose your nursing home.",
+
+"I wonder how much deeper the ocean would be without sponges.",
+
+"No one is listening until you make a mistake.",
+
+"We have enough youth.How about a fountain of “Smart” ?",
+
+"He who laughs last thinks slowest.",
+
+"If Barbie is so popular, why do you have to buy her friends ?",
+
+"Stop repeat offenders.Don’ t re - elect them!",
+
+"I intend to live forever.So far so good.",
+
+"Out of my mind.Back in five minutes.",
+
+"Laugh alone and the world thinks you’ re an idiot.",
+
+"The Big Bang Theory: God Spoke and BANG!It happened.",
+
+"Atheism is a non - prophet organization.",
+
+"Despite the cost of living, have you noticed how it remains so popular ?",
+
+"Save the whales.Collect the whole set.",
+
+"I don’ t find it hard to meet expenses.They’ re everywhere.",
+
+"Don’ t steal.The government hates competition.",
+
+"Humpty Dumpty was pushed.",
+
+"I didn’ t fight my way to the top of the food chain to be a vegetarian.",
+
+"Never answer an anonymous letter.",
+
+"Campers: Nature’ s way of feeding mosquitoes.",
+
+"Always remember that you are unique; just like everyone else.",
+
+"Consciousness: That annoying time between naps.",
+
+"Life is too complicated in the morning.",
+
+"We are all part of the ultimate statistic– ten out of ten dies.",
+
+"Nobody’ s perfect.I’ m a nobody.",
+
+"Ask me about my vow of silence.",
+
+"Who is“ General Failure” and why is he reading my hard disk ?",
+
+"What happens if you get scared half to death twice ?",
+
+"I used to have an open mind but my brains kept falling out.",
+
+"Energizer Bunny arrested; charged with battery.",
+
+"I didn’ t use to finish sentences, but now I…",
+
+"I’ ve had amnesia as long as I can remember.",
+
+"My mind is like a steel trap, rusty and illegal in 37 states.",
+
+"On the other hand, you have different fingers.",
+
+"I’ ve only been wrong once, and that’ s when I thought I was wrong.",
+
+"God made mankind.Sin made him evil.",
+
+"The hardness of butter is directly proportional to the softness of the bread.",
+
+"The last thing on earth you want to do will be the last thing you do.",
+
+"Diplomacy is the art of letting someone else get your way.",
+
+"If ignorance is bliss, then tourists are in a constant state of euphoria.",
+
+"If at first, you don’ t succeed, don’ t try skydiving.",
+
+"It’ s lonely at the top, but you do eat better.",
+
+"I don’ t suffer from insanity; I enjoy every minute of it.",
+
+"I woke up this morning and forgot which side the sun rises from, then it dawned on me.",
+
+"Always go to other people’ s funerals, or they won’ t go to yours.",
+
+"Few women admit their age; few men act it.",
+
+"If we aren’ t supposed to eat animals, why are they made with meat ?",
+
+"They told me I was gullible… and I believed them.",
+
+"According to my best recollection, I don’ t remember.",
+
+"The word“ gullible” isn’ t in the dictionary.",
+
+"The more people I meet, the more I like my dog.",
+
+"Work is for people who don’ t know how to fish.",
+
+"If you don’ t like the news, go out and make some.",
+
+"For every action, there is an equal and opposite criticism.",
+
+"~Q: Who was the worlds first carpenter ? ~A: Eve, because she made Adams banana stand",
+
+"~Q: Why does Dr Pepper come(cum) in a bottle ? ~A: Because his wife died!",
+
+"~Q: When do you kick a midget in the balls ? ~A: When he is standing next to your girlfriend saying her hair smells nice",
+
+"~Q: What’ s the difference between your job and a dead prostitute ? ~A: Your job still sucks!",
+
+"~Q: Why do men get their great ideas in bed ? ~A: Because they’ re plugged into a genius!",
+
+"~Q: What do you call an artist with a brown finger ? ~A: Piccassole",
+
+"~Q: Did you guys hear about the cannibal that made a bunch of businessmen into Chili ? ~A: I guess he liked seasoned professionals.",
+
+"~Q: Whats long and hard and has cum in it ? ~A: a cucumber",
+
+"~Q: How do you kill a circus clown ? ~A: Go for the juggler!",
+
+"~Q: Did you hear about the guy who died of a Viagra overdose ? ~A: They couldn’ t close his casket.",
+
+"~Q: Why don’ t orphans play baseball ? ~A: They don’ t know where home is.",
+
+"~Q: What’ s the difference between a Catholic priest and a zit ? ~A: At least a zit waits until you’ re a teenager before it cums on your face!",
+
+"~Q: Why can’ t Jesus play hockey ? ~A: He keeps getting nailed to the boards.",
+
+"~Q: What did the hurricane say to the coconut palm tree ? ~A: Hold on to your nuts, this is no ordinary blow job!",
+
+"~Q: How does a woman scare a gynaecologist ? ~A: By becoming a ventriloquist!",
+
+"~Q: What’ s 6 inches long, 2 inches wide and drives women wild ? ~A: A $100 bill!",
+
+"~Q: What do you call a cheap circumcision ? ~A: A rip off Girl: “Hey, what’ s up ? ”Boy : “If I tell you, will you sit on it ? ”",
+
+"~Q: How do you get a nun pregnant ? ~A: Dress her up as an altar boy.",
+
+"~Q: Why can’ t you play Uno with a Mexican ? ~A: They steal all the green cards.",
+
+"~Q: How do you circumcise a hillbilly ? ~A: Kick his sister in the jaw.",
+
+"How did the black girl know her mother was on the rag ? Her brothers dick tasted funny.",
+
+"How did they improve the transportation in Harlem ? Moved the trees closer together.",
+
+"How did they invent break dancing ? Trying to steal the hubcaps off a moving car.",
+
+"What do you call a black guys condom ? A duffel bag.",
+
+"What do you call a black man in a tree ? A branch manager.",
+
+"What do you call a black man in Thailand ? A tycoon.",
+
+"How can you tell when a black has been on your computer ? It is not there.",
+
+"Did you hear about the new black French restaurant ? It’ s called Chez What.",
+
+"What did Lincoln say after his five - day drunk ? I freed whom.",
+
+"A black guy and a Mexican guy opened a restaurant.It’ s called Nacho Mama.",
+
+"Did you hear about Klu Klux Knievel ? He tried to jump over 8 blacks with a steamroller.",
+
+"Did you hear that the KKK bought the movie rights to Roots ? They’ re going to play it backwards so it has a happy ending.",
+
+"Why are black people so tall ? Because their knee grows.",
+
+"Why did God invent golf ? So white people could dress up like blacks.",
+
+"Why do black people wear hats covering their face ? So the birds don’ t shit on their lips.",
+
+"What do you call a barn full of blacks ? Farm equipment.",
+
+"What did the black girl say while having sex ? Dad, get off me you’ re crushing my ciggies.",
+
+"What did the black women get for getting an abortion ? Fat cash from crime stoppers.",
+
+"What did the white redneck say to his wife when she told him their black neighbours were coming over for Christmas ? So much for a white Christmas this year!",
+
+"How many black people does it take to single a roof ? Depends on how thin you slice um.",
+
+"~Q: Why are blonde jokes so stupid ? ~A: So brunettes can get them!",
+
+"~Q: What does a blonde say after she knocks over an antique vase that is priceless and it cracks on the ground ? ~A: “It’ s Okay daddy, I’ m alright”",
+
+"~Q: Why did the blonde snort Sweet - n - Low ? ~A: She thought it was Diet Coke.",
+
+"~Q: What does a blonde say after two more years of college ? ~A: Would you like fries with that ?",
+
+"~Q: Why did the blonde cross the road ? ~A: I don’ t know, and neither does she.",
+
+"~Q: Why can’ t you tell blondes knock - knock jokes ? ~A: Because they go answer the door.",
+
+"~Q: Why is it a blonde cannot have more than a 10 minutes lunch break ? A: Because otherwise, you have to retrain her.",
+
+"~Q: What do you call a couple of blondes in the front seat of a car ? ~A: Air Bags.",
+
+"~Q: What do you do if a Blonde throws a pin at you ? ~A: Run, she’ s got a grenade in her mouth!",
+
+"~Q: How can you tell if a Blonde has been using your computer ? ~A: There is white - out all over the monitor.",
+
+"~Q: Why shouldn’ t Blondes have coffee breaks ? ~A: It takes too long to retrain them.",
+
+"~Q: What’ s a blonde and a postage stamp got in common ? ~A: Lick Em, Stick Em, Send Em",
+
+"~Q: How can you tell if a blonde has been on the computer ? ~A: There is tipex on the screen.",
+
+"~Q: How can you tell if she has been on again ? ~A: She has left cheese for the mouse.",
+
+"~Q: What do SMART Blondes and UFO’ s have in common ? ~A: You always hear about them but never see them.",
+
+"~Q: What did the Blonde say when she opened the box of Cheerios ? ~A: Oh look, Daddy… Doughnut seeds.",
+
+"~Q: How do you get a twinkle in a Blonde’ s eye ? ~A: Shine a flashlight in her ear.",
+
+"~Q: Hear about the blonde that got an AM radio ? ~A: It took her a month to realize she could play it at night.",
+
+"~Q: What happened to the blonde Ice Hockey Team ? ~A: They drowned in Spring Training.",
+
+"~Q: What is dumber than two brunettes that tried to build a house at the bottom of the ocean ? ~A: Two blondes that tried to burn it down!",
+
+"~Q: What’ s blonde - brunette - blonde - brunette - blonde - brunette - blonde ? ~A: A blonde doing cartwheels.",
+
+"~Q: What do you call a blonde with half a brain ? ~A: Gifted.",
+
+"~Q: Did you hear the one about the blonde fox that got stuck in a trap ? ~A: She chewed off three legs and was still stuck.",
+
+"~Q: Why did the blonde have square boobs ? ~A: She forgot to take the tissue out of the box.",
+
+"~Q: What’ s an intelligent blonde ? ~A: A Golden Retreiver.",
+
+"~Q: How do blonde’ s brain cells die ? ~A: Alone.",
+
+"~Q: How do you make a one arm blonde fall out of a tree ? ~A: Wave to her!",
+
+"~Q: What do you call blondes in a freezer ? ~A: Frosted Flakes!",
+
+"~Q: Did you hear about the blonde who died drinking milk ? ~A: The cow fell on her.",
+
+"~Q: What do blondes and beer bottles have in common ? ~A: They are both empty from the neck up!",
+
+"~Q: Why does a blonde keep a wire coat hanger in the back seat of her car ? ~A: In case she locks her keys in .",
+
+"~Q: What do you call an eternity ? ~A: Four Blondes in four cars at a four - way stop.",
+
+"~Q: Why do Blondes have TGIF written on their shoes ? ~A: Toes Go In First.",
+
+"~Q: Why did the Blonde stare at the can of frozen orange juice ? ~A: Because it said concentrate.",
+
+"~Q: Why does it take longer to build a Blonde snowman as opposed to a regular one ? ~A: You have to hollow out the head.",
+
+"~Q: What did the blonde say when she saw the sign in front of the YMCA ? ~A: “Look!They spelt MACY’ S wrong!”",
+
+"~Q: How do you make a blonde laugh on Saturday ? ~A: Tell her joke on Wednesday.",
+
+"Why did God make poo smelly ? So deaf people could enjoy them too.",
+
+"Did you hear that diarrhoea is hereditary ? It runs in the genes.",
+
+"Have you heard about that new movie Constipation ? It hasn’ t come out yet.",
+
+"Why did Tigger stick his head in the toilet ? He was looking for Pooh.",
+
+"Why does Tigger smell ? You’ d smell too if you played with Winnie the Pooh all day.",
+
+"What did the maxi pad say to the fart ? You are the wind beneath my wings.",
+
+"What do you get when you cross a Bulldog and a Shih Tzu ? Bullshit!",
+
+"What’ s brown and sticky ? A stick.",
+
+"What did the tired bum hole say after a crap ? I’ m pooped out",
+
+"We always hold hands.If I let go, she shops.",
+
+"My wife and I went back to the hotel where we spent our wedding night, only this time I stayed in the bathroom and cried.",
+
+"Patient: “I have a ringing in my ears.”Doctor: “Don’ t answer!”",
+
+"A drunk was in front of a judge.The judge says, “You’ ve been brought here for drinking.”The drunk says“ Okay, let’ s get started.”",
+
+"I’ ve been in love with the same woman for 49 years.If my wife ever finds out, she’ ll kill me!",
+
+"What are three words a woman never wants to hear when she’ s making love ? “Honey, I’ m home!”",
+
+"She was at the beauty shop for two hours.That was only for the estimate.She got a mud pack and looked great for two days.Then the mud fell off.",
+
+"Doctor: “You’ ll live to be 60!”Patient: “I AM 60!”Doctor: “See!What did I tell you ? ”",
+
+"A car hit an elderly Jewish man.The paramedic says, “Are you comfortable ? ”The man says, “I make a good living.”",
+
+"I just got back from a pleasure trip.I took my mother - in -law to the airport.",
+
+"My wife and I went to a hotel where we got a waterbed.My wife called it the Dead Sea.",
+
+"A doctor held a stethoscope up to a man’ s chest.The man asks, “Doc, how do I stand ? ”The doctor says, “That’ s what puzzles me!”",
+
+"Why do Jewish divorces cost so much ? They’ re worth it.",
+
+"What do you call a Jewish knight ? Sir Cumsiced.",
