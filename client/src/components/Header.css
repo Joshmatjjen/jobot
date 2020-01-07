@@ -92,7 +92,7 @@ a:hover {
 
 .header .menu {
   clear: both;
-  max-height: 0;
+  /* max-height: 0; */
   transition: max-height .2s ease-out;
 }
 
@@ -144,6 +144,7 @@ a:hover {
 .header .menu-btn:checked~.menu {
   max-height: 240px;
 }
+
 
 .header .menu-btn:checked~.menu-icon .navicon {
   background: transparent;
