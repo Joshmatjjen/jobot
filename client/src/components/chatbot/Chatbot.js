@@ -9,11 +9,9 @@ import Message from "./Message";
 import Card from "./Card";
 import QuickReplies from "./QuickReplies";
 
-// import bot from '../../assets/bot.png';
 import bot from "../../assets/parrot.png";
 import chat from "../../assets/chat.png";
 import "./Chatbot.style.css";
-import Platform from "react-platform-js";
 
 const cookies = new Cookies();
 class Chatbot extends Component {
@@ -186,7 +184,7 @@ class Chatbot extends Component {
       await this.resolveAfterXSeconds(3);
       this.setState({showBot: true});
     }
-
+    this.talkInput.focus();
     if (window.location.pathname === "/") {
       await this.df_event_query("Welcome");
       this.setState({sentText: "Parrot Typing....."});
@@ -210,9 +208,13 @@ class Chatbot extends Component {
 
   async componentDidUpdate() {
     this.messagesEnds.scrollIntoView({behaviour: "smooth"});
-    // if (this.talkInput) {
-    //   this.talkInput.focus();
-    // }
+    if (this.talkInput) {
+      this.talkInput.focus();
+    }
+  }
+
+  async componentWillUnmount() {
+    this.talkInput.autofocus();
   }
 
   async show() {
@@ -371,6 +373,7 @@ class Chatbot extends Component {
             <input
               placeholder="Type a message...."
               autofocus="autofocus"
+              // onFocus="blur()"
               type="text"
               ref={input => {
                 this.talkInput = input;
