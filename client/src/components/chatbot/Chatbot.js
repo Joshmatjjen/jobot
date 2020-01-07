@@ -45,7 +45,7 @@ class Chatbot extends Component {
   }
 
   //   😂
-  //   😁 😊
+  //    😊😁😂
   //   😊 Let me tell you a joke:
   // 🥰  😍
   // 💕  😘
@@ -56,12 +56,16 @@ class Chatbot extends Component {
   // 🤐
   // 🦜
   // 🤓
-
+  // 🤔
   // 😎
   // 🙂
   // 😐
   // 🤣
   // 🤖
+  //💙
+  // 🧠
+  // 🎨
+  // 😏
 
   async df_text_query(text) {
     let says = {
