@@ -210,9 +210,9 @@ class Chatbot extends Component {
 
   async componentDidUpdate() {
     this.messagesEnds.scrollIntoView({behaviour: "smooth"});
-    if (this.talkInput) {
-      this.talkInput.focus();
-    }
+    // if (this.talkInput) {
+    //   this.talkInput.focus();
+    // }
   }
 
   async show() {

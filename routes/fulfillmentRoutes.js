@@ -283,7 +283,7 @@ module.exports = app => {
     }
     let intentMap = new Map();
     await intentMap.set("learn joshmat", joshmat);
-    await intentMap.set("parrot", parrot);
+    // await intentMap.set("parrot", parrot);
     await intentMap.set("jokes", joke);
     await intentMap.set("jokes -yes", joke);
     await intentMap.set("learn courses", learn);
