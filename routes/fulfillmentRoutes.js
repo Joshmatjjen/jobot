@@ -49,7 +49,43 @@ module.exports = app => {
         let docNum = await Joke.countDocuments();
         let number = docNum - 1;
         console.log(number);
-        let jokelist = [];
+        let jokelist = [
+          "Lightning doesn´t mean to shock people, it just doesn´t know how to conduct itself.",
+          "Knowledge is knowing a tomato is a fruit. Wisdom is not putting it in a fruit salad.",
+          "The only substitute for good manners is fast reflexes.",
+          "Reading whilst sunbathing makes you well red.",
+          "Evening news is where they begin with ´Good evening´, and then proceed to tell you why it isn´t.",
+          "A bus station is where a bus stops. A train station is where a train stops. On my desk, I have a work station.",
+          "Did you know that dolphins are so smart that within a few weeks of captivity, they can train people to stand on the very edge of the pool and throw them fish?",
+          "A bank is a place that will lend you money, if you can prove that you don´t need it.",
+          "A clear conscience is usually the sign of a bad memory.",
+          "My first job was working in an orange juice factory, but I got canned because I couldn´t concentrate.",
+          "Worrying works! 90% of the things I worry about never happen.",
+          "A bus is a vehicle that runs twice as fast when you are after it as when you are in it.",
+          "Can´t stand it when a sentence doesn´t end the way you think it OCTOPUS!",
+          "I was going to donate blood until the lady got all personal and started asking ¨Who´s blood is this?¨ and ¨How did you get it?¨",
+
+          "If swimming is so good for your figure, how do you explain whales?",
+          "I don´t have a big ego. I´m way too cool for that.",
+          "Why couldn´t the bicycle stand? Because it was two tired.",
+          "Originality is the art of concealing your sources.",
+          "Despite the cost of living, have you noticed how popular it remains?",
+          "My GPS keeps saying, ¨Go back 20 years and enter law school.¨",
+          "If I eat healthy today then I can have one piece of candy as a reward. If I eat unhealthy, I can have the whole bag.",
+          "My mother was so overprotective we were only allowed to play rock, paper.",
+          "I don´t know what ´gluten free´ means but I´m adding it to my resume.",
+          "Don´t worry. Your secret is safe with me. Everyone I told swore they wouldn´t tell anyone else.",
+          "Your call is very important to us. Please enjoy this 40 minute flute solo.",
+          "The barman says ¨we don´t serve time travellers here¨. A time traveller walks into a bar.",
+          "Drinking and drugs will not solve all your problems. That´s what chocolate and ice cream are for.",
+          "If you notice a person is deceiving you, they must not be deceiving you very well.",
+          "My boss has told so many unfunny jokes today, I´ve forgotten what my real laugh sounds like.",
+          "A cat jumps into a cab and yells, “Follow that red dot!”",
+          "The trouble with real life is that there is no danger music.",
+          "Unless you can be Batman, always be yourself.",
+          "You know it's time to reconsider your diet when you buy a hulahoop and it fits.",
+          "In order to catch a bus, first one must think like a bus.",
+        ];
         // ''' ""
         for (let i = 0; i < jokelist.length; i++) {
           reg = await Joke.create({
@@ -283,7 +319,7 @@ module.exports = app => {
     }
     let intentMap = new Map();
     await intentMap.set("learn joshmat", joshmat);
-    // await intentMap.set("parrot", parrot);
+    await intentMap.set("parrot", parrot);
     await intentMap.set("jokes", joke);
     await intentMap.set("jokes -yes", joke);
     await intentMap.set("learn courses", learn);
