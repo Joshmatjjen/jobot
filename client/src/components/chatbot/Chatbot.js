@@ -158,7 +158,8 @@ class Chatbot extends Component {
           speaks: "bot",
           msg: {
             text: {
-              text: "I'm having trobles. I need to terminate. will be back later",
+              text:
+                "I'm having trobles due to poor internet connection. I need to terminate. will be back later",
             },
           },
         };
@@ -184,7 +185,6 @@ class Chatbot extends Component {
       await this.resolveAfterXSeconds(3);
       this.setState({showBot: true});
     }
-    this.talkInput.focus();
     if (window.location.pathname === "/") {
       await this.df_event_query("Welcome");
       this.setState({sentText: "Parrot Typing....."});
@@ -211,10 +211,6 @@ class Chatbot extends Component {
     if (this.talkInput) {
       this.talkInput.focus();
     }
-  }
-
-  async componentWillUnmount() {
-    this.talkInput.autofocus();
   }
 
   async show() {

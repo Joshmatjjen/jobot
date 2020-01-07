@@ -1,44 +1,75 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import Logo from '../assets/logo.png';
-import './Header.css';
+import React, {Component, useState} from "react";
+import ReactDOM from "react-dom";
+import {Link} from "react-router-dom";
+import Logo from "../assets/logo.png";
+import "./Header.css";
 
-const Header = () => {
-  return (
-    <header className="header">
-      <Link to={'/'} className="logo">
-        <img width="50px" height="50px" src={Logo} />
-        <h1>JoBot</h1>
-      </Link>
-      <input className="menu-btn" type="checkbox" id="menu-btn" />
-      <label className="menu-icon" htmlFor="menu-btn">
-        <span className="navicon"></span>
-      </label>
-      <ul className="menu">
-        <li>
-          <Link to={'/shop'} className="page">
-            Shop
-          </Link>
-        </li>
+class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.navEvent = React.createRef();
+    this.toNewPage = this.toNewPage.bind(this);
+    this.navBtn = this.navBtn.bind(this);
+    this.state = {
+      menuHeight: "0px",
+    };
+  }
+  toNewPage() {
+    this.setState({menuHeight: "0px"});
+  }
+  navBtn() {
+    if (this.state.menuHeight === "240px") {
+      this.setState({menuHeight: "0px"});
+    }
+    if (this.state.menuHeight === "0px") {
+      this.setState({menuHeight: "240px"});
+    }
+  }
+  render() {
+    return (
+      <header className="header">
+        <Link to={"/"} className="logo">
+          <img width="50px" height="50px" src={Logo} />
+          <h1>JoBot</h1>
+        </Link>
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label className="menu-icon" onClick={this.navBtn} htmlFor="menu-btn">
+          <span className="navicon"></span>
+        </label>
+        <ul
+          className="menu"
+          ref={this.navEvent}
+          style={{maxHeight: this.state.menuHeight}}
+        >
+          <li onClick={this.toNewPage}>
+            <Link to={"/shop"} className="page">
+              Shop
+            </Link>
+          </li>
 
-        <li>
-          <Link to={'/about'} className="page">
-            About Me
-          </Link>
-        </li>
-        <li>
-          <a target="_blank" href={'https://github.com/Joshmatjjen'} className="version">
-            v1.0
-          </a>
-        </li>
-        {/* <li>
+          <li onClick={this.toNewPage}>
+            <Link to={"/about"} className="page">
+              About Me
+            </Link>
+          </li>
+          <li onClick={this.toNewPage}>
+            <a
+              target="_blank"
+              href={"https://github.com/Joshmatjjen"}
+              className="version"
+            >
+              v1.0
+            </a>
+          </li>
+          {/* <li>
           <Link to={'/'} className="page hire-me">
             Hire Me
           </Link>
         </li> */}
-      </ul>
-    </header>
-  );
-};
+        </ul>
+      </header>
+    );
+  }
+}
 
 export default Header;
