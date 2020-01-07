@@ -370,6 +370,7 @@ class Chatbot extends Component {
           <div className="input-msg">
             <input
               placeholder="Type a message...."
+              autofocus="autofocus"
               type="text"
               ref={input => {
                 this.talkInput = input;
