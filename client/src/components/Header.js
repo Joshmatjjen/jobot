@@ -28,7 +28,7 @@ class Header extends Component {
   render() {
     return (
       <header className="header">
-        <Link to={"/"} className="logo">
+        <Link to={"/"} className="logo" onClick={this.toNewPage}>
           <img width="50px" height="50px" src={Logo} />
           <h1>JoBot</h1>
         </Link>
