@@ -12,14 +12,22 @@ class Header extends Component {
     this.navBtn = this.navBtn.bind(this);
     this.state = {
       menuHeight: "0px",
+      matches: window.matchMedia("(min-width: 48em)").matches,
     };
+  }
+
+  componentDidMount() {
+    const handler = e => this.setState({matches: e.matches});
+    window.matchMedia("(min-width: 48em)").addListener(handler);
   }
   toNewPage() {
     this.setState({menuHeight: "0px"});
   }
   navBtn() {
     if (this.state.menuHeight === "240px") {
-      this.setState({menuHeight: "0px"});
+      this.setState({
+        menuHeight: "0px",
+      });
     }
     if (this.state.menuHeight === "0px") {
       this.setState({menuHeight: "240px"});
@@ -36,37 +44,68 @@ class Header extends Component {
         <label className="menu-icon" onClick={this.navBtn} htmlFor="menu-btn">
           <span className="navicon"></span>
         </label>
-        <ul
-          className="menu"
-          ref={this.navEvent}
-          style={{maxHeight: this.state.menuHeight}}
-        >
-          <li onClick={this.toNewPage}>
-            <Link to={"/shop"} className="page">
-              Shop
-            </Link>
-          </li>
+        {this.state.matches && (
+          <ul className="menu" ref={this.navEvent} style={{maxHeight: "none"}}>
+            <li onClick={this.toNewPage}>
+              <Link to={"/shop"} className="page">
+                Shop
+              </Link>
+            </li>
 
-          <li onClick={this.toNewPage}>
-            <Link to={"/about"} className="page">
-              About Me
-            </Link>
-          </li>
-          <li onClick={this.toNewPage}>
-            <a
-              target="_blank"
-              href={"https://github.com/Joshmatjjen"}
-              className="version"
-            >
-              v1.0
-            </a>
-          </li>
-          {/* <li>
+            <li onClick={this.toNewPage}>
+              <Link to={"/about"} className="page">
+                About Me
+              </Link>
+            </li>
+            <li onClick={this.toNewPage}>
+              <a
+                target="_blank"
+                href={"https://github.com/Joshmatjjen"}
+                className="version"
+              >
+                v1.0
+              </a>
+            </li>
+            {/* <li>
           <Link to={'/'} className="page hire-me">
             Hire Me
           </Link>
         </li> */}
-        </ul>
+          </ul>
+        )}
+        {!this.state.matches && (
+          <ul
+            className="menu"
+            ref={this.navEvent}
+            style={{maxHeight: this.state.menuHeight}}
+          >
+            <li onClick={this.toNewPage}>
+              <Link to={"/shop"} className="page">
+                Shop
+              </Link>
+            </li>
+
+            <li onClick={this.toNewPage}>
+              <Link to={"/about"} className="page">
+                About Me
+              </Link>
+            </li>
+            <li onClick={this.toNewPage}>
+              <a
+                target="_blank"
+                href={"https://github.com/Joshmatjjen"}
+                className="version"
+              >
+                v1.0
+              </a>
+            </li>
+            {/* <li>
+          <Link to={'/'} className="page hire-me">
+            Hire Me
+          </Link>
+        </li> */}
+          </ul>
+        )}
       </header>
     );
   }

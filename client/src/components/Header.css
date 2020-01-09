@@ -154,6 +154,7 @@ a:hover {
   transform: rotate(-45deg);
 }
 
+
 .header .menu-btn:checked~.menu-icon .navicon:after {
   transform: rotate(45deg);
 }
@@ -162,6 +163,33 @@ a:hover {
 .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
+
+
+/* Ul */
+
+/* 
+.header ul li:active~.menu {
+  max-height: 240px;
+}
+
+
+.header ul li:active~.menu-icon .navicon {
+  background: transparent;
+}
+
+.header ul li:active~.menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+
+.header ul li:active~.menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header ul li:active~.menu-icon:not(.steps) .navicon:before,
+.header ul li:active~.menu-icon:not(.steps) .navicon:after {
+  top: 0;
+} */
 
 /* 48em = 768px */
 
