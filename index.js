@@ -1,14 +1,14 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+const express = require("express");
+const bodyParser = require("body-parser");
 
 const app = express();
 
-const config = require('./config/keys');
-const mongoose = require('mongoose');
+const config = require("./config/keys");
+const mongoose = require("mongoose");
 const db = config.mongoURI;
 mongoose
   .connect(config.mongoURI, {useUnifiedTopology: true, useNewUrlParser: true})
-  .then(() => console.log('DB connection successful!😊'))
+  .then(() => console.log("DB connection successful!😊"))
   .catch(err => console.log(err.message.reason));
 
 // const connectDB = async () => {
@@ -25,27 +25,28 @@ mongoose
 // };
 // connectDB();
 
-require('./models/Registration');
-require('./models/Demand');
-require('./models/Coupons');
-require('./models/Joshmat');
-require('./models/BotFriends');
-require('./models/Jokes');
-require('./models/Test');
+require("./models/Registration");
+require("./models/Demand");
+require("./models/Coupons");
+require("./models/Joshmat");
+require("./models/BotFriends");
+require("./models/Jokes");
+require("./models/Test");
+require("./models/SmallTalk");
 
 app.use(bodyParser.json());
 
-require('./routes/dialogFlowRoutes')(app);
-require('./routes/fulfillmentRoutes')(app);
+require("./routes/dialogFlowRoutes")(app);
+require("./routes/fulfillmentRoutes")(app);
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === "production") {
   // js and css files
-  app.use(express.static('client/build'));
+  app.use(express.static("client/build"));
 
   // index.html for all page routes
-  const path = require('path');
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  const path = require("path");
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
 
