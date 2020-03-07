@@ -8,9 +8,8 @@
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 2px 10px 18px rgb(207, 203, 203);
-  cursor: url('../../assets/cursor.png'), auto;
+  cursor: url("../../assets/cursor.png"), auto;
 }
-
 
 .dot {
   height: 10px;
@@ -55,8 +54,7 @@
   position: absolute;
   color: #f76421;
   padding: 15px;
-  cursor: url('../../assets/tap.cur'),
-    pointer;
+  cursor: url("../../assets/tap.cur"), pointer;
 }
 
 .nav-close :hover {
@@ -114,7 +112,16 @@
   color: #e48e66;
 }
 
+@media only screen and (max-height: 750px) {
+  .chatbox {
+    max-height: 85%;
+    top: 10;
+  }
 
+  .msg-box {
+    max-height: 85%;
+  }
+}
 
 @media only screen and (max-width: 610px) {
   .chatbox {

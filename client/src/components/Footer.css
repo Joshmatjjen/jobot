@@ -37,6 +37,12 @@
   /* padding-left: 30px; */
 }
 
+@media only screen and (max-height: 900px) {
+  .footers {
+    position: relative;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .footers {
     display: flex;
