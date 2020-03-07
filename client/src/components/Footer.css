@@ -39,7 +39,7 @@
 
 @media only screen and (max-height: 900px) {
   .footers {
-    position: relative;
+    position: static;
   }
 }
 
