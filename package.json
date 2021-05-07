@@ -32,7 +32,7 @@
     "mongoose-unique-validator": "^2.0.3",
     "react-linkify": "^1.0.0-alpha",
     "react-platform-js": "0.0.1",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "concurrently": "^5.0.0",
