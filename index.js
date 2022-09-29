@@ -1,7 +1,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+require("dotenv").config();
 
 const app = express();
+console.log("MongoDB is Connected...", process.env.DIALOGFLOW_LANGUAGE_CODE);
 
 const config = require("./config/keys");
 const mongoose = require("mongoose");
@@ -9,7 +11,7 @@ const db = config.mongoURI;
 mongoose
   .connect(config.mongoURI, {useUnifiedTopology: true, useNewUrlParser: true})
   .then(() => console.log("DB connection successful!😊"))
-  .catch(err => console.log(err.message.reason));
+  .catch((err) => console.log(err.message.reason));
 
 // const connectDB = async () => {
 //   try {

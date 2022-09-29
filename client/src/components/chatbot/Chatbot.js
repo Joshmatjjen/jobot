@@ -158,14 +158,13 @@ class Chatbot extends Component {
           speaks: "bot",
           msg: {
             text: {
-              text:
-                "I'm having trobles due to poor internet connection. I need to terminate. will be back later",
+              text: "I'm having trobles due to poor internet connection. I need to terminate. will be back later",
             },
           },
         };
         this.setState({messages: [...this.state.messages, says]});
         let that = this;
-        setTimeout(function() {
+        setTimeout(function () {
           that.setState({showBot: false, messages: []});
         }, 3000);
       }
@@ -173,7 +172,7 @@ class Chatbot extends Component {
   }
 
   resolveAfterXSeconds(x) {
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       setTimeout(() => {
         resolve(x);
       }, x * 1000);
@@ -359,7 +358,7 @@ class Chatbot extends Component {
             </div>
 
             <div
-              ref={el => {
+              ref={(el) => {
                 this.messagesEnds = el;
               }}
               style={{float: "left", clear: "both"}}
@@ -371,12 +370,12 @@ class Chatbot extends Component {
               autofocus="autofocus"
               // onFocus="blur()"
               type="text"
-              ref={input => {
+              ref={(input) => {
                 this.talkInput = input;
               }}
               value={this.state.inputValue}
               onKeyPress={this._handleInputKeyPress}
-              onChange={event => this.setState({inputValue: event.target.value})}
+              onChange={(event) => this.setState({inputValue: event.target.value})}
             />
             <div className="send">
               <div onClick={this._handleSendBtn} className="send-btn">
@@ -394,10 +393,10 @@ class Chatbot extends Component {
           width="65px"
           height="65px"
           onClick={this.show}
-          ref={el => {
+          ref={(el) => {
             this.messagesEnds = el;
           }}
-          style={{position: "fixed", right: 20, bottom: 100, clear: "both"}}
+          style={{position: "fixed", right: 20, bottom: 120, clear: "both"}}
         />
       );
     }
