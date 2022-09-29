@@ -1,6 +1,5 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-require("dotenv").config();
 
 const app = express();
 console.log("MongoDB is Connected...", process.env.DIALOGFLOW_LANGUAGE_CODE);
